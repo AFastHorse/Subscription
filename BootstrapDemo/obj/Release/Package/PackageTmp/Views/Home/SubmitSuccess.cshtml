@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "提交成功";
+}
+@section styles{
+    <style>
+        h4 {
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 27px;
+        }
+    </style>
+}
+<br /><br />
+<div class="row">
+    <div class="col-md-12">
+        <h4>恭喜张三先生您已成功认购本次旅游方案。您认购详情为：</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>
+            旅游目的地：吉隆坡仙本那<br />
+            您以认购API90000元达成认购旅游方案
+        </h4>
+    </div>
+</div>
+<div class="row">
+    <br /><br /><br /><br />
+    <div class="col-md-12">
+        <h4>从来没有一种坚持 会被辜负</h4>
+    </div>
+    <br /><br /><br /><br />
+</div>
+<div class="row" style="text-align: center;">
+    <div class="col-md-6" style="display:inline-block;">
+        <button id="saveImg" class="btn btn-default" type="button">保存图片</button>
+    </div>
+    <div class="col-md-6" style="display:inline-block;">
+        <button id="forwardImg" class="btn btn-default" type="button">一键转发</button>
+    </div>
+</div>
+@section scripts{
+    <script>
+        $(function () {
+            $('#saveImg').click(function () {
+                alert("保存成功");
+            });
+            $('#forwardImg').click(function () {
+                alert("转发成功");
+            });
+        });
+    </script>
+}

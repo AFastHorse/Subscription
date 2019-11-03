@@ -1,0 +1,47 @@
+﻿@using BootstrapDemo.Common
+@using BootstrapDemo.Models
+@model BootstrapDemo.Models.SubscriptionTarget
+<div class="form-group">
+    <label class="control-label col-md-2" for="SavingProducts_PaymentAge_@(ViewBag.Index)">储蓄类交费年期</label>
+    <div class="col-md-10">
+        <select class="form-control" id="SavingProducts_@(ViewBag.Index)" name="SavingProducts_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumSavingProducts)))
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2" for="SavingProducts_PaymentAge_@(ViewBag.Index)">储蓄类交费年期</label>
+    <div class="col-md-10">
+        <select class="form-control" id="SavingProducts_PaymentAge_@(ViewBag.Index)" name="SavingProducts_PaymentAge_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumPaymentAge)))
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2" for="SecurityProducts_PaymentAge_@(ViewBag.Index)">保障类交费年期</label>
+    <div class="col-md-10">
+        <select class="form-control" id="SavingProducts_@(ViewBag.Index)" name="SavingProducts_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumSecurityProducts)))
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2" for="SecurityProducts_PaymentAge_@(ViewBag.Index)">保障类交费年期</label>
+    <div class="col-md-10">
+        <select class="form-control" id="SecurityProducts_PaymentAge_@(ViewBag.Index)" name="SecurityProducts_PaymentAge_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumPaymentAge)))
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+</div>
