@@ -3,6 +3,7 @@
     ViewBag.Title = "认购成功";
 }
 @section styles{
+    <link href="~/Content/nativeShare.css" rel="stylesheet" />
     <style>
         h4 {
             padding-left: 30px;
@@ -41,6 +42,7 @@
     </div>
 </div>
 @section scripts{
+    <script src="~/Scripts/nativeShare.js"></script>
     <script>
         $(function () {
             $('#saveImg').click(function () {
@@ -50,5 +52,14 @@
                 alert("转发成功");
             });
         });
+        var config = {
+            url: 'http://blog.wangjunfeng.com',// 分享的网页链接
+            title: '王俊锋的个人博客',// 标题
+            desc: '王俊锋的个人博客',// 描述
+            img: 'http://www.wangjunfeng.com/img/face.jpg',// 图片
+            img_title: '王俊锋的个人博客',// 图片标题
+            from: '王俊锋的博客' // 来源
+        };
+        var share_obj = new nativeShare('forwardImg', config);
     </script>
 }
