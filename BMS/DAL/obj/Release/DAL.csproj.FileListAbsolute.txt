@@ -1,0 +1,13 @@
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\DAL.dll
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\DAL.pdb
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\Dapper.dll
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\Model.dll
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\Utility.dll
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\log4net.dll
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\Model.pdb
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\Utility.pdb
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\Dapper.xml
+G:\Project\业务名单管理系统\BMS\DAL\bin\Release\log4net.xml
+G:\Project\业务名单管理系统\BMS\DAL\obj\Release\DAL.csprojResolveAssemblyReference.cache
+G:\Project\业务名单管理系统\BMS\DAL\obj\Release\DAL.dll
+G:\Project\业务名单管理系统\BMS\DAL\obj\Release\DAL.pdb

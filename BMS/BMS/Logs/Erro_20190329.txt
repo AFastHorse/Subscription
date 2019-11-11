@@ -1,0 +1,126 @@
+2019-03-29 10:41:07,930 [7] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-03-29 10:41:09,358 [15] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-03-29 11:10:11,034 [6] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-03-29 11:11:09,864 [6] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-03-29 11:12:08,045 [9] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-03-29 11:12:49,103 [6] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-03-29 11:53:45,362 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:53:45,405 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:53:45,425 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:54:38,762 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:54:38,765 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:54:38,767 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:55:07,082 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:55:07,096 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:55:07,098 [15] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:58:31,801 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:58:31,804 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:58:31,806 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:59:53,726 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:59:54,778 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 11:59:55,377 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 12:02:01,799 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 12:02:01,802 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 12:02:01,806 [17] ERROR BMS.Page.PersonalCustomer.CustomerHandler - 该字符串未被识别为有效的 DateTime。
+System.FormatException: 该字符串未被识别为有效的 DateTime。
+   在 System.DateTimeParse.Parse(String s, DateTimeFormatInfo dtfi, DateTimeStyles styles)
+   在 System.Convert.ToDateTime(String value)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 201
+2019-03-29 15:17:29,518 [29] ERROR ASP.global_asax - 文件“/Page/DeptManage/Index.aspx”不存在。
+System.Web.HttpException (0x80004005): 文件“/Page/DeptManage/Index.aspx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVirtualPathObjectFactory(VirtualPath virtualPath, HttpContext context, Boolean allowCrossApp, Boolean throwIfNotFound)
+   在 System.Web.Compilation.BuildManager.CreateInstanceFromVirtualPath(VirtualPath virtualPath, Type requiredBaseType, HttpContext context, Boolean allowCrossApp)
+   在 System.Web.UI.PageHandlerFactory.GetHandlerHelper(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.PageHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

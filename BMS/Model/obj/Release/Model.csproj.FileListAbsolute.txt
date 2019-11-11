@@ -1,0 +1,5 @@
+G:\Project\业务名单管理系统\BMS\Model\bin\Release\Model.dll
+G:\Project\业务名单管理系统\BMS\Model\bin\Release\Model.pdb
+G:\Project\业务名单管理系统\BMS\Model\obj\Release\Model.csprojResolveAssemblyReference.cache
+G:\Project\业务名单管理系统\BMS\Model\obj\Release\Model.dll
+G:\Project\业务名单管理系统\BMS\Model\obj\Release\Model.pdb

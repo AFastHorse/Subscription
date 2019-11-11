@@ -1,0 +1,1065 @@
+2019-03-21 09:03:22,103 [52] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 209
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 09:03:34,944 [34] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 209
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 09:03:37,835 [52] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 09:03:42,418 [50] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 10:33:14,607 [85] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:16,115 [67] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:34,080 [85] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:34,980 [87] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:35,502 [62] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:35,731 [75] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:35,904 [85] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:36,130 [72] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:49,295 [86] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:49,721 [75] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:49,929 [72] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:50,142 [72] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:50,353 [72] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:50,546 [87] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:50,745 [75] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:52,683 [67] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:52,877 [72] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:52,994 [86] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:53,226 [86] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:33:53,331 [87] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:35:24,474 [72] ERROR ASP.global_asax - '=' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): '=' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 122
+   在 BLL.MessageBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 61
+   在 BMS.Pages.Message.MessageHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 247
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 27
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:242b6feb-f27d-455d-a25c-fa0504f2dc11
+Error Number:102,State:1,Class:15
+2019-03-21 10:36:01,006 [83] ERROR ASP.global_asax - 关键字 'set' 附近有语法错误。
+'MessageTable' 不是可以识别的 SET 选项。
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'set' 附近有语法错误。
+'MessageTable' 不是可以识别的 SET 选项。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.Delete(Int32 id) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 79
+   在 BLL.MessageBll.Delete(Int32 id) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 38
+   在 BMS.Pages.Message.MessageHandler.DeleteData(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 81
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2f5f1487-7850-48a9-8551-0340c15d864b
+Error Number:156,State:1,Class:15
+2019-03-21 10:36:02,407 [72] ERROR ASP.global_asax - 关键字 'set' 附近有语法错误。
+'MessageTable' 不是可以识别的 SET 选项。
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'set' 附近有语法错误。
+'MessageTable' 不是可以识别的 SET 选项。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MessageDal.Delete(Int32 id) 位置 g:\Project\业务名单管理系统\BMS\DAL\MessageDal.cs:行号 79
+   在 BLL.MessageBll.Delete(Int32 id) 位置 g:\Project\业务名单管理系统\BMS\BLL\MessageBll.cs:行号 38
+   在 BMS.Pages.Message.MessageHandler.DeleteData(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 81
+   在 BMS.Pages.Message.MessageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Message\MessageHandler.ashx.cs:行号 33
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:2f5f1487-7850-48a9-8551-0340c15d864b
+Error Number:156,State:1,Class:15
+2019-03-21 11:21:21,761 [50] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:21:22,874 [45] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:21:23,409 [53] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:21:23,667 [59] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:21:23,886 [50] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:21:24,031 [47] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:09,079 [55] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:09,726 [45] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:09,965 [52] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:10,098 [47] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:10,251 [45] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:10,445 [50] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:10,544 [45] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:10,834 [47] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:10,882 [55] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,361 [53] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,430 [50] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,451 [45] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,507 [47] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,527 [55] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,538 [59] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,601 [53] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,621 [50] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,637 [45] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,694 [47] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,762 [52] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,793 [55] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:11,816 [59] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Pages.Main.Page_Load(Object sender, EventArgs e) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\Main.aspx.cs:行号 24
+   在 System.Web.Util.CalliEventHandlerDelegateProxy.Callback(Object sender, EventArgs e)
+   在 System.Web.UI.Control.OnLoad(EventArgs e)
+   在 System.Web.UI.Control.LoadRecursive()
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)
+2019-03-21 11:22:50,930 [50] ERROR ASP.global_asax - 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+System.Web.HttpException (0x80004005): 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 11:22:59,948 [52] ERROR ASP.global_asax - 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+System.Web.HttpException (0x80004005): 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 11:23:25,090 [52] ERROR ASP.global_asax - 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+System.Web.HttpException (0x80004005): 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 11:23:41,556 [45] ERROR ASP.global_asax - 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+System.Web.HttpException (0x80004005): 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 11:24:08,513 [53] ERROR ASP.global_asax - 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+System.Web.HttpException (0x80004005): 文件“/Page/PersonCustomer/CustomerHandler.ashx”不存在。
+   在 System.Web.UI.Util.CheckVirtualFileExists(VirtualPath virtualPath)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultInternal(VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResultWithNoAssert(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean throwIfNotFound, Boolean ensureIsUpToDate)
+   在 System.Web.Compilation.BuildManager.GetVPathBuildResult(HttpContext context, VirtualPath virtualPath, Boolean noBuild, Boolean allowCrossApp, Boolean allowBuildInPrecompile, Boolean ensureIsUpToDate)
+   在 System.Web.UI.SimpleHandlerFactory.System.Web.IHttpHandlerFactory2.GetHandler(HttpContext context, String requestType, VirtualPath virtualPath, String physicalPath)
+   在 System.Web.UI.SimpleHandlerFactory.GetHandler(HttpContext context, String requestType, String virtualPath, String path)
+   在 System.Web.HttpApplication.MaterializeHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-03-21 14:59:59,309 [9] ERROR ASP.global_asax - 关键字 'user' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'user' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MenuDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MenuDal.cs:行号 101
+   在 BLL.MenuBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MenuBll.cs:行号 61
+   在 BMS.Page.MenuMange.MenuHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\MenuManage\MenuHandler.ashx.cs:行号 189
+   在 BMS.Page.MenuMange.MenuHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\MenuManage\MenuHandler.ashx.cs:行号 30
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:60d29699-b0ca-4da4-a132-bceee958a462
+Error Number:156,State:1,Class:15
+2019-03-21 15:00:52,550 [61] ERROR ASP.global_asax - 关键字 'user' 附近有语法错误。
+System.Data.SqlClient.SqlException (0x80131904): 关键字 'user' 附近有语法错误。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   在 System.Data.SqlClient.SqlDataReader.get_MetaData()
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   在 System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   在 System.Data.Common.DbCommand.System.Data.IDbCommand.ExecuteReader(CommandBehavior behavior)
+   在 Dapper.SqlMapper.ExecuteReaderWithFlagsFallback(IDbCommand cmd, Boolean wasClosed, CommandBehavior behavior)
+   在 Dapper.SqlMapper.<QueryImpl>d__125`1.MoveNext()
+   在 System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   在 System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   在 Dapper.SqlMapper.Query[T](IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Boolean buffered, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.MenuDal.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\DAL\MenuDal.cs:行号 101
+   在 BLL.MenuBll.GetList(String strWhere, Int32 pageIndex, Int32 pageSize) 位置 g:\Project\业务名单管理系统\BMS\BLL\MenuBll.cs:行号 61
+   在 BMS.Page.MenuMange.MenuHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\MenuManage\MenuHandler.ashx.cs:行号 189
+   在 BMS.Page.MenuMange.MenuHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\MenuManage\MenuHandler.ashx.cs:行号 30
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:d496df95-97de-45eb-89d7-124072d38a36
+Error Number:156,State:1,Class:15
+2019-03-21 17:01:27,290 [8] ERROR ASP.global_asax - 必须声明标量变量 "@OrderNumm"。
+System.Data.SqlClient.SqlException (0x80131904): 必须声明标量变量 "@OrderNumm"。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.RoleDal.Update(RoleTable model) 位置 g:\Project\业务名单管理系统\BMS\DAL\RoleDal.cs:行号 42
+   在 BLL.RoleBll.Update(RoleTable model) 位置 g:\Project\业务名单管理系统\BMS\BLL\RoleBll.cs:行号 30
+   在 BMS.Page.RoleManage.RoleHandler.AddData(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\RoleManage\RoleHandler.ashx.cs:行号 138
+   在 BMS.Page.RoleManage.RoleHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\RoleManage\RoleHandler.ashx.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:8fe54946-a8d7-4989-b920-1026beb91d16
+Error Number:137,State:2,Class:15
+2019-03-21 17:01:28,496 [7] ERROR ASP.global_asax - 必须声明标量变量 "@OrderNumm"。
+System.Data.SqlClient.SqlException (0x80131904): 必须声明标量变量 "@OrderNumm"。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.RoleDal.Update(RoleTable model) 位置 g:\Project\业务名单管理系统\BMS\DAL\RoleDal.cs:行号 42
+   在 BLL.RoleBll.Update(RoleTable model) 位置 g:\Project\业务名单管理系统\BMS\BLL\RoleBll.cs:行号 30
+   在 BMS.Page.RoleManage.RoleHandler.AddData(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\RoleManage\RoleHandler.ashx.cs:行号 138
+   在 BMS.Page.RoleManage.RoleHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\RoleManage\RoleHandler.ashx.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:8fe54946-a8d7-4989-b920-1026beb91d16
+Error Number:137,State:2,Class:15
+2019-03-21 17:04:06,980 [46] ERROR ASP.global_asax - 必须声明标量变量 "@OrderNumm"。
+System.Data.SqlClient.SqlException (0x80131904): 必须声明标量变量 "@OrderNumm"。
+   在 System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   在 System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   在 System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   在 System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   在 System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   在 System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   在 Dapper.SqlMapper.ExecuteCommand(IDbConnection cnn, CommandDefinition& command, Action`2 paramReader)
+   在 Dapper.SqlMapper.ExecuteImpl(IDbConnection cnn, CommandDefinition& command)
+   在 Dapper.SqlMapper.Execute(IDbConnection cnn, String sql, Object param, IDbTransaction transaction, Nullable`1 commandTimeout, Nullable`1 commandType)
+   在 DAL.RoleDal.Update(RoleTable model) 位置 g:\Project\业务名单管理系统\BMS\DAL\RoleDal.cs:行号 42
+   在 BLL.RoleBll.Update(RoleTable model) 位置 g:\Project\业务名单管理系统\BMS\BLL\RoleBll.cs:行号 30
+   在 BMS.Page.RoleManage.RoleHandler.AddData(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\RoleManage\RoleHandler.ashx.cs:行号 138
+   在 BMS.Page.RoleManage.RoleHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\RoleManage\RoleHandler.ashx.cs:行号 32
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+ClientConnectionId:643d447c-9ab2-41e2-a513-17b88bafd702
+Error Number:137,State:2,Class:15

@@ -1,0 +1,2 @@
+2019-11-11 00:23:59,027 [45] INFO  BMS.LoginHandler - adminµÇÂ¼
+2019-11-11 00:39:20,664 [28] INFO  BMS.LoginHandler - adminµÇÂ¼

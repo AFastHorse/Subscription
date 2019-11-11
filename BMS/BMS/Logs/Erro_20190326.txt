@@ -1,0 +1,16 @@
+2019-03-26 10:27:05,060 [57] ERROR ASP.global_asax - 类型“TextBox”的控件“txtPwd2”必须放在具有 runat=server 的窗体标记内。
+System.Web.HttpException (0x80004005): 类型“TextBox”的控件“txtPwd2”必须放在具有 runat=server 的窗体标记内。
+   在 System.Web.UI.Page.VerifyRenderingInServerForm(Control control)
+   在 System.Web.UI.WebControls.TextBox.AddAttributesToRender(HtmlTextWriter writer)
+   在 System.Web.UI.WebControls.WebControl.RenderBeginTag(HtmlTextWriter writer)
+   在 System.Web.UI.WebControls.TextBox.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
+   在 System.Web.UI.Control.RenderChildren(HtmlTextWriter writer)
+   在 System.Web.UI.Page.Render(HtmlTextWriter writer)
+   在 System.Web.UI.Control.RenderControlInternal(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer, ControlAdapter adapter)
+   在 System.Web.UI.Control.RenderControl(HtmlTextWriter writer)
+   在 System.Web.UI.Page.ProcessRequestMain(Boolean includeStagesBeforeAsyncPoint, Boolean includeStagesAfterAsyncPoint)

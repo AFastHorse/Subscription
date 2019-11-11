@@ -1,0 +1,28 @@
+2019-04-08 09:32:07,899 [39] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Page.MenuMange.MenuHandler.GetMenuListForMain(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\MenuManage\MenuHandler.ashx.cs:行号 163
+   在 BMS.Page.MenuMange.MenuHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\MenuManage\MenuHandler.ashx.cs:行号 42
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-04-08 09:32:07,899 [37] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Page.DeptManage.DeptHandler.GetList(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\DeptManage\DeptHandler.ashx.cs:行号 181
+   在 BMS.Page.DeptManage.DeptHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\DeptManage\DeptHandler.ashx.cs:行号 26
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-04-08 09:32:07,899 [34] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Page.PersonalCustomer.CustomerHandler.GetListForPrivate(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 613
+   在 BMS.Page.PersonalCustomer.CustomerHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 34
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)
+2019-04-08 09:32:07,899 [36] ERROR ASP.global_asax - 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+System.InvalidCastException: 无法将类型为“System.Security.Principal.GenericPrincipal”的对象强制转换为类型“BMS.Custom.FormsPrincipal”。
+   在 BMS.Page.UserManage.UserManageHandler.GetListForMsgUsers(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\UserManage\UserManageHandler.ashx.cs:行号 246
+   在 BMS.Page.UserManage.UserManageHandler.ProcessRequest(HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\UserManage\UserManageHandler.ashx.cs:行号 51
+   在 System.Web.HttpApplication.CallHandlerExecutionStep.System.Web.HttpApplication.IExecutionStep.Execute()
+   在 System.Web.HttpApplication.ExecuteStepImpl(IExecutionStep step)
+   在 System.Web.HttpApplication.ExecuteStep(IExecutionStep step, Boolean& completedSynchronously)

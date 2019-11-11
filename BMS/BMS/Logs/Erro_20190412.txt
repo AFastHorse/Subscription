@@ -1,0 +1,12 @@
+2019-04-12 14:33:02,683 [49] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-04-12 14:33:47,134 [38] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+2019-04-12 14:34:31,468 [38] ERROR ASP.global_asax - 空对象不能转换为值类型。
+System.InvalidCastException: 空对象不能转换为值类型。
+   在 System.Convert.ChangeType(Object value, Type conversionType, IFormatProvider provider)
+   在 Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)

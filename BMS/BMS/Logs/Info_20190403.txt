@@ -1,0 +1,5 @@
+2019-04-03 11:23:41,481 [5] INFO  BMS.LoginHandler - AdminµÇÂ¼
+2019-04-03 11:42:14,491 [21] INFO  BMS.LoginHandler - soxsok04-1µÇÂ¼
+2019-04-03 11:54:12,422 [22] INFO  BMS.LoginHandler - soxsok01µÇÂ¼
+2019-04-03 11:54:36,645 [25] INFO  BMS.LoginHandler - peixun1µÇÂ¼
+2019-04-03 15:06:14,662 [9] INFO  BMS.LoginHandler - AdminµÇÂ¼

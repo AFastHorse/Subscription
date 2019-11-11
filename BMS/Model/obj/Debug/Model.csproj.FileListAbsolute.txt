@@ -1,0 +1,9 @@
+G:\Project\业务名单管理系统\BMS\Model\bin\Debug\Model.dll
+G:\Project\业务名单管理系统\BMS\Model\bin\Debug\Model.pdb
+G:\Project\业务名单管理系统\BMS\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+G:\Project\业务名单管理系统\BMS\Model\obj\Debug\Model.dll
+G:\Project\业务名单管理系统\BMS\Model\obj\Debug\Model.pdb
+E:\Work\BootStrapDemo\BMS\Model\bin\Debug\Model.dll
+E:\Work\BootStrapDemo\BMS\Model\bin\Debug\Model.pdb
+E:\Work\BootStrapDemo\BMS\Model\obj\Debug\Model.dll
+E:\Work\BootStrapDemo\BMS\Model\obj\Debug\Model.pdb

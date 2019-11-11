@@ -1,0 +1,10 @@
+E:\Work\BootStrapDemo\BMS\Model\bin\Debug\Model.dll
+E:\Work\BootStrapDemo\BMS\Model\bin\Debug\Model.pdb
+E:\Work\BootStrapDemo\BMS\Model\obj\Debug\Model.dll
+E:\Work\BootStrapDemo\BMS\Model\obj\Debug\Model.pdb
+E:\Work\BootStrapDemo\BMS\Model\obj\Debug\Models.csprojResolveAssemblyReference.cache
+F:\gaoyuwei\Subscription\BMS\Model\bin\Debug\Model.dll
+F:\gaoyuwei\Subscription\BMS\Model\bin\Debug\Model.pdb
+F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Models.csproj.CoreCompileInputs.cache
+F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Model.dll
+F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Model.pdb

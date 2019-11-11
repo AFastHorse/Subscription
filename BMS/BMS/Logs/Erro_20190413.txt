@@ -1,0 +1,5 @@
+2019-04-13 08:49:47,227 [47] ERROR BMS.Page.PersonalCustomer.CustomerHandler - Cannot get a numeric value from a text cell
+System.InvalidOperationException: Cannot get a numeric value from a text cell
+   在 NPOI.HSSF.UserModel.HSSFCell.get_NumericCellValue()
+   在 NPOI.SS.UserModel.DateUtil.IsCellDateFormatted(ICell cell)
+   在 BMS.Page.PersonalCustomer.CustomerHandler.InitDataSource(String strFileName, HttpContext context) 位置 g:\Project\业务名单管理系统\BMS\BMS\Page\PersonalCustomer\CustomerHandler.ashx.cs:行号 236
