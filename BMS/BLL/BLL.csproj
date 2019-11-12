@@ -39,6 +39,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OrderDetailBLL.cs" />
+    <Compile Include="OrdersBLL.cs" />
     <Compile Include="StaffsBLL.cs" />
     <Compile Include="SysDepartBLL.cs" />
     <Compile Include="SysMenuBLL.cs" />

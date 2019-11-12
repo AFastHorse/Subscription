@@ -1,0 +1,8 @@
+2019-11-12 09:24:43,744 [11] ERROR ASP.global_asax - 未能加载类型“BMS.Page.SubscriptionManage.Index”。
+System.Web.HttpParseException (0x80004005): 未能加载类型“BMS.Page.SubscriptionManage.Index”。 ---> System.Web.HttpException (0x80004005): 未能加载类型“BMS.Page.SubscriptionManage.Index”。
+   在 System.Web.UI.TemplateParser.GetType(String typeName, Boolean ignoreCase, Boolean throwOnError)
+   在 System.Web.UI.TemplateParser.ProcessInheritsAttribute(String baseTypeName, String codeFileBaseTypeName, String src, Assembly assembly)
+   在 System.Web.UI.TemplateParser.PostProcessMainDirectiveAttributes(IDictionary parseData)
+   在 System.Web.UI.TemplateParser.ProcessException(Exception ex)
+   在 System.Web.UI.TemplateParser.ParseStringInternal(String text, Encoding fileEncoding)
+   在 System.Web.UI.TemplateParser.ParseString(String text, VirtualPath virtualPath, Encoding fileEncoding)

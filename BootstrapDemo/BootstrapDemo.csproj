@@ -224,6 +224,7 @@
     <Content Include="Images\bg1.jpg" />
     <Content Include="Images\bg2.jpg" />
     <Content Include="Images\bg3.jpg" />
+    <Content Include="Images\bg4.png" />
     <Content Include="Images\subscription.png" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

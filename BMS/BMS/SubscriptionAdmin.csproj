@@ -21,6 +21,7 @@
     <IISExpressUseClassicPipelineMode />
     <TargetFrameworkProfile />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -131,7 +132,9 @@
     <Content Include="Page\MenuManage\Index.aspx" />
     <Content Include="Page\MenuManage\MenuHandler.ashx" />
     <Content Include="Page\DeptManage\DeptHandler.ashx" />
+    <Content Include="Page\SubscriptionManage\Index.aspx" />
     <Content Include="Page\UserManage\UserManageHandler.ashx" />
+    <Content Include="Page\SubscriptionManage\SubscriptionManage.ashx" />
     <None Include="Properties\PublishProfiles\BMS.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -351,6 +354,16 @@
     </Compile>
     <Compile Include="Page\MenuManage\MenuHandler.ashx.cs">
       <DependentUpon>MenuHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\SubscriptionManage\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\SubscriptionManage\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\SubscriptionManage\SubscriptionManage.ashx.cs">
+      <DependentUpon>SubscriptionManage.ashx</DependentUpon>
     </Compile>
     <Compile Include="Page\UserManage\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>

@@ -32,8 +32,8 @@ F:\gaoyuwei\Subscription\BMS\Utility\bin\Debug\Utility.pdb
 F:\gaoyuwei\Subscription\BMS\Utility\bin\Debug\ICSharpCode.SharpZipLib.dll
 F:\gaoyuwei\Subscription\BMS\Utility\bin\Debug\log4net.dll
 F:\gaoyuwei\Subscription\BMS\Utility\bin\Debug\log4net.xml
-F:\gaoyuwei\Subscription\BMS\Utility\obj\Debug\Utility.csprojAssemblyReference.cache
 F:\gaoyuwei\Subscription\BMS\Utility\obj\Debug\Utility.csproj.CoreCompileInputs.cache
 F:\gaoyuwei\Subscription\BMS\Utility\obj\Debug\Utility.csproj.CopyComplete
 F:\gaoyuwei\Subscription\BMS\Utility\obj\Debug\Utility.dll
 F:\gaoyuwei\Subscription\BMS\Utility\obj\Debug\Utility.pdb
+F:\gaoyuwei\Subscription\BMS\Utility\obj\Debug\Utility.csprojAssemblyReference.cache

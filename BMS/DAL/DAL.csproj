@@ -45,6 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="OrderDetailDAL.cs" />
+    <Compile Include="OrdersDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StaffsDAL.cs" />
     <Compile Include="SysDepartDAL.cs" />

@@ -34,29 +34,29 @@
         function updateUserMsg() {
             layer.open({
                 type: 2
-              , title: '修改资料'
-              , content: '/Page/UserManage/UserMessage.aspx'
-              , maxmin: false
-              , area: ['460px', '280px']
-              , btn: ['保存', '取消']
-              , yes: function (index, layero) {
-                  var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
-                  submit.click();
-              }
+                , title: '修改资料'
+                , content: '/Page/UserManage/UserMessage.aspx'
+                , maxmin: false
+                , area: ['460px', '280px']
+                , btn: ['保存', '取消']
+                , yes: function (index, layero) {
+                    var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
+                    submit.click();
+                }
             });
         }
         function changePassword() {
             layer.open({
                 type: 2
-              , title: '修改密码'
-              , content: '/Page/UserManage/ChangePwd.aspx'
-              , maxmin: false
-              , area: ['460px', '300px']
-              , btn: ['确定', '取消']
-              , yes: function (index, layero) {
-                  var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
-                  submit.click();
-              }
+                , title: '修改密码'
+                , content: '/Page/UserManage/ChangePwd.aspx'
+                , maxmin: false
+                , area: ['460px', '300px']
+                , btn: ['确定', '取消']
+                , yes: function (index, layero) {
+                    var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
+                    submit.click();
+                }
             });
         }
     </script>
@@ -123,7 +123,7 @@
                 </div>
                 <div class="layui-tab" lay-unauto lay-allowclose="true" lay-filter="layadmin-layout-tabs">
                     <ul class="layui-tab-title" id="LAY_app_tabsheader">
-                        <li id="liindexPage" lay-id="/Page/UserManage/Index.aspx" lay-attr="/Page/UserManage/Index.aspx" class="layui-this">认购管理</li>
+                        <li id="liindexPage" lay-id="/Page/SubscriptionManage/Index.aspx" lay-attr="/Page/SubscriptionManage/Index.aspx" class="layui-this">认购管理</li>
                     </ul>
                 </div>
             </div>
@@ -132,7 +132,7 @@
             <!-- 主体内容 -->
             <div class="layui-body" id="LAY_app_body" style="top: 40px;">
                 <div class="layadmin-tabsbody-item layui-show">
-                    <iframe id="ifmMain" src="/Page/UserManage/Index.aspx" frameborder="0" class="layadmin-iframe"></iframe>
+                    <iframe id="ifmMain" src="/Page/SubscriptionManage/Index.aspx" frameborder="0" class="layadmin-iframe"></iframe>
                 </div>
             </div>
 
