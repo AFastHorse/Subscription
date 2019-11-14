@@ -2,21 +2,39 @@
 @using BootstrapDemo.Models
 @model BootstrapDemo.Models.SubscriptionTarget
 <div class="form-group">
-    <label class="control-label col-md-2" for="SavingProducts_PaymentAge_@(ViewBag.Index)">储蓄类交费年期</label>
+    <label class="control-label col-md-2" for="SavingProducts_@(ViewBag.Index)">储蓄类产品</label>
     <div class="col-md-10">
-        <select class="form-control" id="SavingProducts_@(ViewBag.Index)" name="SavingProducts_@(ViewBag.Index)">
-            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumSavingProducts)))
+        <select class="form-control sel_saving" data-index="@ViewBag.Index" id="SavingProducts_@(ViewBag.Index)" name="SavingProducts_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectIntList(typeof(EnumSavingProducts)))
             {
                 <option value="@item.Value">@item.Text</option>
             }
         </select>
+    </div>
+</div>
+<div class="form-group">
+    <label class="control-label col-md-2" for="SavingProducts_Money_@(ViewBag.Index)">储蓄类年交保费</label>
+    <div class="col-md-10">
+        @*@Html.Editor("SavingProducts_Money_" + (int)(ViewBag.Index))*@
+        <input class="form-control text-box single-line money" id="SavingProducts_Money_@(ViewBag.Index)" name="SavingProducts_Money_@(ViewBag.Index)" type="number" value="">
     </div>
 </div>
 <div class="form-group">
     <label class="control-label col-md-2" for="SavingProducts_PaymentAge_@(ViewBag.Index)">储蓄类交费年期</label>
     <div class="col-md-10">
-        <select class="form-control" id="SavingProducts_PaymentAge_@(ViewBag.Index)" name="SavingProducts_PaymentAge_@(ViewBag.Index)">
-            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumPaymentAge)))
+        <select class="form-control sel_pay_age" data-index="@ViewBag.Index" id="SavingProducts_PaymentAge_@(ViewBag.Index)" name="SavingProducts_PaymentAge_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectIntList(typeof(EnumPaymentAge)))
+            {
+                <option value="@item.Value">@item.Text</option>
+            }
+        </select>
+    </div>
+</div>
+@*<div class="form-group">
+    <label class="control-label col-md-2" for="SecurityProducts_@(ViewBag.Index)">保障类产品</label>
+    <div class="col-md-10">
+        <select class="form-control" id="SecurityProducts_@(ViewBag.Index)" name="SecurityProducts_@(ViewBag.Index)">
+            @foreach (var item in EnumExtension.ToSelectIntList(typeof(EnumSecurityProducts)))
             {
                 <option value="@item.Value">@item.Text</option>
             }
@@ -24,24 +42,14 @@
     </div>
 </div>
 <div class="form-group">
-    <label class="control-label col-md-2" for="SecurityProducts_PaymentAge_@(ViewBag.Index)">保障类交费年期</label>
+    <label class="control-label col-md-2" for="SecurityProducts_Money_@(ViewBag.Index)">保障类年交保费</label>
     <div class="col-md-10">
-        <select class="form-control" id="SavingProducts_@(ViewBag.Index)" name="SavingProducts_@(ViewBag.Index)">
-            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumSecurityProducts)))
-            {
-                <option value="@item.Value">@item.Text</option>
-            }
-        </select>
+        <input class="form-control text-box single-line" id="SecurityProducts_Money_@(ViewBag.Index)" name="SecurityProducts_Money_@(ViewBag.Index)" type="number" value="">
     </div>
 </div>
 <div class="form-group">
     <label class="control-label col-md-2" for="SecurityProducts_PaymentAge_@(ViewBag.Index)">保障类交费年期</label>
     <div class="col-md-10">
-        <select class="form-control" id="SecurityProducts_PaymentAge_@(ViewBag.Index)" name="SecurityProducts_PaymentAge_@(ViewBag.Index)">
-            @foreach (var item in EnumExtension.ToSelectList(typeof(EnumPaymentAge)))
-            {
-                <option value="@item.Value">@item.Text</option>
-            }
-        </select>
+        <input class="form-control text-box single-line" id="SecurityProducts_PaymentAge_@(ViewBag.Index)" name="SecurityProducts_PaymentAge_@(ViewBag.Index)" type="number" value="">
     </div>
-</div>
+</div>*@

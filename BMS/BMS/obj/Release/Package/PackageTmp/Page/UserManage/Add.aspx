@@ -21,31 +21,26 @@
             </div>
             <label class="layui-form-label">名称</label>
             <div class="layui-input-inline">
-                <input type="text" name="RealName" id="txtRealName" lay-verify="required" placeholder="名称" autocomplete="off" class="layui-input">
+                <input type="text" name="StaffName" id="txtStaffName" lay-verify="required" placeholder="名称" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">角色</label>
+            <%--  <label class="layui-form-label">角色</label>
             <div class="layui-input-inline" lay-filter="divRoleId">
                 <select name="RoleId" id="selRoleId" lay-verify="required">
                 </select>
-            </div>
+            </div>--%>
             <label class="layui-form-label">部门</label>
             <div class="layui-input-inline">
-                <select name="DeptId" id="selDeptId" lay-verify="required">
+                <select name="DepartId" id="selDeptId" lay-verify="required">
                 </select>
             </div>
         </div>
+
         <div class="layui-form-item">
-            <label class="layui-form-label" style="width: 100px; left: -17px;">是否部门主管</label>
-            <div class="layui-input-inline" style="margin-left: -20px;">
-                <input type="checkbox" name="IsManager" id="ckbIsManager" lay-skin="primary">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">备注</label>
+            <label class="layui-form-label">员工编号</label>
             <div class="layui-input-inline" style="width: 500px;">
-                <input type="text" name="Remark" id="txtRemark" placeholder="备注" autocomplete="off" class="layui-input">
+                <input type="text" name="StaffCode" id="txtStaffCode" placeholder="员工编号" autocomplete="off" class="layui-input">
             </div>
         </div>
         <div class="layui-form-item layui-hide">
@@ -64,7 +59,7 @@
             var $ = layui.$, form = layui.form;
 
             $.ajax({
-                url: '/Page/DeptManage/DeptHandler.ashx?operation=GetList&r=' + Math.random(),
+                url: '/Page/DeptManage/DeptHandler.ashx?operation=GetList&type=GetDropList&r=' + Math.random(),
                 async: false,
                 dataType: 'json',
                 type: 'Post',
@@ -74,25 +69,9 @@
 
                     str = '<option value="">请选择</option>';
                     $.each(data, function (index, item) {
-                        str += '<option value="' + item.Id + '">' + item.Name + '</option>';
+                        str += '<option value="' + item.Id + '">' + item.DepartName + '</option>';
                     });
                     $('#selDeptId').html(str);
-                    form.render('select');
-                }
-            });
-            $.ajax({
-                url: '/Page/RoleManage/RoleHandler.ashx?operation=GetList&r=' + Math.random(),
-                async: false,
-                dataType: 'json',
-                type: 'Post',
-                data: {},
-                success: function (result) {
-                    var data = result.data;
-                    str = '<option value="">请选择</option>';
-                    $.each(data, function (index, item) {
-                        str += '<option value="' + item.Id + '">' + item.Name + '</option>';
-                    });
-                    $('#selRoleId').html(str);
                     form.render('select');
                 }
             });

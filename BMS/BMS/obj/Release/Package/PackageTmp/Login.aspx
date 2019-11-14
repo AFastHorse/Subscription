@@ -39,7 +39,7 @@
             var userName = $('#txtName').val();
             var password = $('#txtPwd').val();
             $.ajax({
-                url: 'LoginHandler.ashx?action=Login',
+                url: '/LoginHandler.ashx?action=Login',
                 async: false,
                 beforeSend: function () {
                     $('#txtPwd').val('');
@@ -82,12 +82,12 @@
 
         <div class="layadmin-user-login-main">
             <div class="layadmin-user-login-box layadmin-user-login-header">
-                <h2>天华教育后台管理系统</h2>
+                <h2>认购平台管理</h2>
             </div>
             <div class="layadmin-user-login-box layadmin-user-login-body layui-form">
                 <div class="layui-form-item">
                     <label class="layadmin-user-login-icon layui-icon layui-icon-username" for="txtName"></label>
-                    <input type="text" name="txtName" id="txtName" placeholder="手机号" class="layui-input" />
+                    <input type="text" name="txtName" id="txtName" placeholder="账号" class="layui-input" />
                 </div>
                 <div class="layui-form-item">
                     <label class="layadmin-user-login-icon layui-icon layui-icon-password" for="txtPwd"></label>
@@ -95,8 +95,6 @@
                 </div>
                 <div class="layui-form-item" style="margin-bottom: 20px;">
                     <input type="checkbox" name="ckbRemember" id="ckbRemember" title="记住密码" />
-                    <a href="Register.aspx" class="layadmin-user-jump-change layadmin-link" style="margin-top: 7px;">注册帐号</a>
-                    <%--<a href="Forget.aspx" class="layadmin-user-jump-change layadmin-link" style="margin-top: 7px;">忘记密码？</a>--%>
                 </div>
                 <div class="layui-form-item">
                     <button class="layui-btn layui-btn-fluid" lay-filter="layuiadmin-app-form-submit" onclick="submitForm();" id="btnLogin">登 入</button>
@@ -105,7 +103,7 @@
         </div>
 
         <div class="layui-trans layadmin-user-login-footer">
-            <p>© 2018 <a href="http://www.kjjl100.com/" target="_blank">天华教育</a></p>
+            <p>© 2018 <a href="#" target="_blank">认购平台管理</a></p>
         </div>
     </div>
 
@@ -120,7 +118,6 @@
                 commonFun = layui.commonFun;
             commonFun.init();
             form.render('checkbox');
-
         });
     </script>
 </body>

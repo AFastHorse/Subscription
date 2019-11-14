@@ -8,3 +8,4 @@ F:\gaoyuwei\Subscription\BMS\Model\bin\Debug\Model.pdb
 F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Models.csproj.CoreCompileInputs.cache
 F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Model.dll
 F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Model.pdb
+F:\gaoyuwei\Subscription\BMS\Model\obj\Debug\Models.csprojAssemblyReference.cache

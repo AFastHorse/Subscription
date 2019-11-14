@@ -1,65 +1,179 @@
-﻿
+﻿@using BootstrapDemo.Common
+@model Models.Orders
 @{
+    /**/
+
     ViewBag.Title = "认购成功";
 }
 @section styles{
-    <link href="~/Content/nativeShare.css" rel="stylesheet" />
+    <link href="~/Content/success.css" rel="stylesheet" />
+    <link href="~/Content/html2canvas.css?v=33" rel="stylesheet" />
     <style>
         h4 {
             padding-left: 30px;
             padding-right: 30px;
             line-height: 27px;
         }
+
+        .body-content {
+            width: 100%;
+            float: left;
+            padding: 0;
+            background: #d93730;
+            color: #fff;
+        }
+
+        .rzcg {
+            position: relative;
+            width: 100%;
+            float: left;
+        }
+
+            .rzcg .bg_img {
+                width: 100%;
+                float: left;
+            }
+
+        .content {
+            position: absolute;
+            top: 7rem;
+            left: 0;
+            width: 100%;
+            float: left;
+        }
+
+        .content_kh {
+            color: #fff;
+        }
+
+        .content_nr .end {
+            color: #fff;
+            margin: 0 10% 19rem;
+            width: 80%;
+            float: left;
+        }
+
+        .content_nr {
+            width: 100%;
+            float: left;
+            margin: 0;
+        }
+
+        .xcy {
+            width: 100%;
+            float: left;
+            margin-bottom: 2.2rem
+        }
+
+            .xcy p {
+                width: 100%;
+                float: left;
+                font-size: 2rem;
+                color: #fff5c2;
+                text-align: center;
+                padding: 0 10%
+            }
+
+        .content_nr .end li .type {
+            width: 29%;
+        }
+
+        .content_nr .end li .number {
+            width: 21%;
+        }
+
+        .content_nr .end li .price {
+            width: 50%;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .shareImg {
+            top: -7rem;
+            /*padding-left: 10rem;*/
+        }
+
+        @@media only screen and (max-width:360px) {
+            .content_nr .end {
+                margin: 0 10% 12rem;
+            }
+        }
+
+        @@media only screen and (max-width:320px) {
+            .anniu {
+                padding-left: 46px;
+            }
+
+            .content_nr .end {
+                margin: 0 10% 8rem;
+            }
+
+                .content_nr .end li .api {
+                    width: 100%;
+                    float: left;
+                    color: #fe5552;
+                    text-align: center;
+                    font-size: 2.96rem;
+                    font-weight: bold;
+                    padding: 0.3rem 0 0.2rem;
+                }
+        }
+
+        @@media only screen and (min-width:375px)and (max-width:400px) {
+            .anniu {
+                padding-left: 66px;
+            }
+
+            .content_nr .end {
+                margin: 0 10% 6rem;
+            }
+        }
     </style>
 }
-<br /><br />
-<div class="row">
-    <div class="col-md-12">
-        <h4>恭喜张三先生您已成功认购本次旅游方案。您认购详情为：</h4>
+<div class="rzcg">
+    <img src="/images/bg4.png" class="bg_img" />
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12 content_kh">
+                <h3>尊敬的<span>@(Model.UserName)</span><br /><span class="cgrz"> 您的开门目标为：@(ViewBag.Destination)旅游方案</span></h3>
+            </div>
+        </div>
+        <div class="row content_nr">
+            <div class="col-md-12 end ">
+                <ul>
+                    <li><p>产品目标：</p></li>
+                    <li><p><span class="type">储蓄类产品</span><span class="number">@ViewBag.Saving_Count 件</span><span class="price">保费 @(Convert.ToInt32(ViewBag.Saving_Money))元</span></p></li>
+                    <li><p><span class="type">福满星产品</span><span class="number">@Model.FMX_Count 件</span><span class="price">保费 @(Model.FMX_Money)元</span></p></li>
+                    <li><p class="api">累计API：@(Convert.ToInt32(ViewBag.API) + Convert.ToInt32(Model.FMX_Money))</p></li>
+                </ul>
+            </div>
+        </div>
+        <div class="shareImg" ref="shareImg" id="shareImg"></div>
     </div>
 </div>
-<div class="row">
+<div class="row" style="text-align: center;position: relative;bottom: 2rem;">
     <div class="col-md-12">
-        <h4>
-            旅游目的地：吉隆坡仙本那<br />
-            您以认购API90000元达成认购旅游方案
-        </h4>
-    </div>
-</div>
-<div class="row">
-    <br /><br /><br /><br />
-    <div class="col-md-12">
-        <h4>从来没有一种坚持 会被辜负</h4>
-    </div>
-    <br /><br /><br /><br />
-</div>
-<div class="row" style="text-align: center;">
-    <div class="col-md-6" style="display:inline-block;">
-        <button id="saveImg" class="btn btn-default" type="button">保存图片</button>
-    </div>
-    <div class="col-md-6" style="display:inline-block;">
-        <button id="forwardImg" class="btn btn-default" type="button">一键转发</button>
+        <button style="background:#fe5552;box-shadow: 0 5px 10px #4b0f0e;color:#fff;" id="saveImg" v-on:click="createImage" class="btn btn-default" type="button" data-html2canvas-ignore>保存图片</button>
+        @*<button style="background:#fe5552;box-shadow: 0 5px 10px #4b0f0e;color:#fff;float: left;position: fixed;right: 5rem;" id="forwardImg" class="btn btn-default" type="button" data-html2canvas-ignore>一键转发</button>*@
     </div>
 </div>
 @section scripts{
     <script src="~/Scripts/nativeShare.js"></script>
-    <script>
-        $(function () {
-            $('#saveImg').click(function () {
-                alert("保存成功");
+    <script src="~/Scripts/html2canvas.js?v=20101212"></script>
+    <script src="~/Scripts/vue-2.4.2.min.js?v=20101212"></script>
+    <script src="~/Scripts/index.js?v=20101212"></script>
+    <script src="~/Scripts/share.js"></script>
+    @*<script>
+            var encouragement = ["要想改变命运，首先改变自己。", "没有退路的时候，正是潜力发挥最大的时候。", "智者创造机会，强者把握机会，弱者坐等机会。",
+                "最可怕的敌人，就是没有坚强的信念。", "每一个成功者都有一个开始。勇于开始，才能找到成功的路。", "活着的目的不在于永远活着，而在于永远活出自己。",
+                "梦想一旦被付诸行动，就会变得神圣。", "一个人，要是不逼自己一把，根本不知道自己有多优秀。", "逆境磨练人、逆境是老师、逆境之苦可变甜。",
+                "如果心胸不似海，又怎能有海一样的事业。"
+            ];
+            $(function () {
+                var index = Math.round(Math.random() * 10);
+                $('#encouragement').html(encouragement[index]);
             });
-            $('#forwardImg').click(function () {
-                alert("转发成功");
-            });
-        });
-        var config = {
-            url: 'http://blog.wangjunfeng.com',// 分享的网页链接
-            title: '王俊锋的个人博客',// 标题
-            desc: '王俊锋的个人博客',// 描述
-            img: 'http://www.wangjunfeng.com/img/face.jpg',// 图片
-            img_title: '王俊锋的个人博客',// 图片标题
-            from: '王俊锋的博客' // 来源
-        };
-        var share_obj = new nativeShare('forwardImg', config);
-    </script>
+        </script>*@
 }

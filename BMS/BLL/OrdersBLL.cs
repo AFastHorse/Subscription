@@ -52,6 +52,25 @@ namespace BLL
         {
             return dal.GetModel(id);
         }
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public Orders GetModel(string orderNo)
+        {
+            return dal.GetModel(orderNo);
+        }
+        /// <summary>
+        /// 得到一个对象实体
+        /// </summary>
+        public Orders GetModelByCondition(string strWhere)
+        {
+            return dal.GetModelByCondition(strWhere);
+        }
+
+        public List<Orders_Detail> GetOrder_DetailList(string strWhere, int pageIndex = 0, int pageSize = 0)
+        {
+            return dal.GetOrder_DetailList(strWhere, pageIndex, pageSize);
+        }
 
         /// <summary>
         /// 获得数据列表

@@ -84,9 +84,9 @@
                             <cite><%=UserName %></cite>
                         </a>
                         <dl class="layui-nav-child" <%=(IsLogin?"":"style=\"display:none;\"") %>>
-                            <dd><a href="javascript:void(0);" onclick="updateUserMsg();">基本资料</a></dd>
+                            <%--<dd><a href="javascript:void(0);" onclick="updateUserMsg();">基本资料</a></dd>
                             <dd><a href="javascript:void(0);" onclick="changePassword();">修改密码</a></dd>
-                            <hr>
+                            <hr>--%>
                             <dd style="text-align: center; cursor: pointer;" onclick="signOut();"><a>退出</a></dd>
                         </dl>
                     </li>

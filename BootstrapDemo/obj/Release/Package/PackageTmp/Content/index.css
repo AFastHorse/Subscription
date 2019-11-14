@@ -1,10 +1,10 @@
 ﻿.navbar-inverse {
-    background-color: #082894;
-    border-color: #423e20;
+    background-color: #d93730;
+    border-color: #d93730;
 }
 
     .navbar-inverse .navbar-toggle {
-        border-color: #574cbd;
+        border-color: #fff;
     }
 
     .navbar-inverse .navbar-brand {
@@ -12,7 +12,7 @@
     }
 
     .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-        background-color: #574cbd;
+        background-color: #d93730;
     }
 
     .navbar-inverse .navbar-nav > li > a {

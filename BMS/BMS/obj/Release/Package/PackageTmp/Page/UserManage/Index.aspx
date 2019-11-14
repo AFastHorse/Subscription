@@ -62,19 +62,8 @@
                     [
                         { type: "checkbox", fixed: "left" },
                         { field: "UserName", width: 150, title: "账号", align: 'center' },
-                        { field: "RealName", title: "实际名称", width: 150, align: 'center' },
-                        { field: "DeptName", title: "部门名称", minWidth: 80, align: "center" },
-                        {
-                            field: "IsManager", title: "是否部门主管", minWidth: 100, align: "center", templet: function (d) {                                
-                                if (d.IsManager) {
-                                    return "是";
-                                }
-                                return "否";
-                            }
-                        },
-                        { field: "RoleName", title: "角色名称", minWidth: 80, align: "center" },
-                        { field: "CreateTime", title: "创建时间", width: 120, align: 'center' },
-                        { field: "Remark", title: "备注", minWidth: 80, align: "center" },
+                        { field: "StaffName", title: "实际名称", width: 150, align: 'center' },
+                        { field: "StaffCode", title: "员工编号", minWidth: 80, align: "center" },
                         { title: "操作", minWidth: 150, align: "center", fixed: "right", toolbar: "#table-content-list" }
                     ]
                 ],

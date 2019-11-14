@@ -17,7 +17,7 @@
             <label class="layui-form-label">名称</label>
             <div class="layui-input-inline">
                 <input type="hidden" id="hidId" name="Id" value="0" />
-                <input type="text" name="Name" id="txtName" lay-verify="required" placeholder="名称" autocomplete="off" class="layui-input">
+                <input type="text" name="DepartName" id="txtName" lay-verify="required" placeholder="名称" autocomplete="off" class="layui-input">
             </div>
             <label class="layui-form-label">上级部门</label>
             <div class="layui-input-inline">
@@ -26,18 +26,12 @@
             </div>
         </div>
         <div class="layui-form-item">
-            <label class="layui-form-label">编码</label>
-            <div class="layui-input-inline">
-                <input type="text" name="Code" id="txtCode" lay-verify="required" placeholder="编码" autocomplete="off" class="layui-input">
-            </div>
             <label class="layui-form-label">排序号</label>
             <div class="layui-input-inline">
                 <input type="text" name="OrderNum" id="txtOrderNum" placeholder="排序号" autocomplete="off" class="layui-input">
             </div>
-        </div>
-        <div class="layui-form-item">
             <label class="layui-form-label">备注</label>
-            <div class="layui-input-inline" style="width: 500px;">
+            <div class="layui-input-inline">
                 <input type="text" name="Remark" id="txtRemark" placeholder="备注" autocomplete="off" class="layui-input">
             </div>
         </div>
@@ -81,8 +75,7 @@
                     data: { parentId: parentId },
                     success: function (data) {
                         $('#hidParentId').val(data.Id);
-                        $('#txtParentName').val(data.Name);
-                        $('#txtCode').val(data.Code);
+                        $('#txtParentName').val(data.DepartName);
                         $('#txtOrderNum').val(data.OrderNum);
                         form.render();
                     }

@@ -13,3 +13,16 @@ G:\Project\业务名单管理系统\BMS\BLL\bin\Release\log4net.xml
 G:\Project\业务名单管理系统\BMS\BLL\obj\Release\BLL.csprojResolveAssemblyReference.cache
 G:\Project\业务名单管理系统\BMS\BLL\obj\Release\BLL.dll
 G:\Project\业务名单管理系统\BMS\BLL\obj\Release\BLL.pdb
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\BLL.dll
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\BLL.pdb
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\DAL.dll
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\Model.dll
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\Dapper.dll
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\DAL.pdb
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\Model.pdb
+F:\gaoyuwei\Subscription\BMS\BLL\bin\Release\Dapper.xml
+F:\gaoyuwei\Subscription\BMS\BLL\obj\Release\BLL.csprojAssemblyReference.cache
+F:\gaoyuwei\Subscription\BMS\BLL\obj\Release\BLL.csproj.CoreCompileInputs.cache
+F:\gaoyuwei\Subscription\BMS\BLL\obj\Release\BLL.csproj.CopyComplete
+F:\gaoyuwei\Subscription\BMS\BLL\obj\Release\BLL.dll
+F:\gaoyuwei\Subscription\BMS\BLL\obj\Release\BLL.pdb

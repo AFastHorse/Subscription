@@ -9,9 +9,9 @@ namespace BootstrapDemo.Models
     public enum EnumSavingProducts
     {
         [Description("财富20")]
-        CaiFu20 = 10,
+        CaiFu20 = 1,
         [Description("金瑞20")]
-        JinRui20 = 20
+        JinRui20 = 2
     }
     public enum EnumPaymentAge
     {

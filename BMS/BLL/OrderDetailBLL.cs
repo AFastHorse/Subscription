@@ -23,6 +23,15 @@ namespace BLL
             return dal.Add(model);
         }
         /// <summary>
+        /// 增加多条数据
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
+        public bool Add(List<OrderDetail> list)
+        {
+            return dal.Add(list);
+        }
+        /// <summary>
         /// 更新一条数据
         /// </summary>
         public bool Update(OrderDetail model)

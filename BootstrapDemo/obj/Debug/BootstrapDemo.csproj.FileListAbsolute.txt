@@ -164,3 +164,13 @@ F:\gaoyuwei\Subscription\BootstrapDemo\obj\Debug\BootstrapDemo.csproj.CoreCompil
 F:\gaoyuwei\Subscription\BootstrapDemo\obj\Debug\BootstrapDemo.csproj.CopyComplete
 F:\gaoyuwei\Subscription\BootstrapDemo\obj\Debug\BootstrapDemo.dll
 F:\gaoyuwei\Subscription\BootstrapDemo\obj\Debug\BootstrapDemo.pdb
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\BLL.dll
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\Model.dll
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\DAL.dll
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\Dapper.dll
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\BLL.pdb
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\Model.pdb
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\DAL.pdb
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\Dapper.xml
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\System.ValueTuple.dll
+F:\gaoyuwei\Subscription\BootstrapDemo\bin\System.ValueTuple.xml

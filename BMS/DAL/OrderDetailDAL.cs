@@ -22,18 +22,25 @@ namespace DAL
         {
             using (var conn = OpenConnection())
             {
-                string sql = @"insert into OrderDetail(OrderNo,SavingProduct,SPMoney,SPPaymentAget,SecurityProduct，SEPMoney，SEPPaymentAge，CreateTime)
-                    values (@OrderNo,@SavingProduct,@SPMoney,@SPPaymentAget,@SecurityProduct，@SEPMoney，@SEPPaymentAge，@CreateTime)";
+                string sql = @"insert into OrderDetail(OrderNo,SavingProduct,SPMoney,SPPaymentAge,ProductType,CreateTime)
+                    values (@OrderNo,@SavingProduct,@SPMoney,@SPPaymentAge,@ProductType，@CreateTime)";
                 return conn.Execute(sql, model) > 0;
+            }
+        }
+        public bool Add(List<OrderDetail> list)
+        {
+            using (var conn = OpenConnection())
+            {
+                string sql = @"insert into OrderDetail(OrderNo,SavingProduct,SPMoney,SPPaymentAge,ProductType,CreateTime)
+                    values (@OrderNo,@SavingProduct,@SPMoney,@SPPaymentAge,@ProductType,@CreateTime)";
+                return conn.Execute(sql, list) > 0;
             }
         }
         public bool Edit(OrderDetail model)
         {
             using (var conn = OpenConnection())
             {
-                string sql = @"update OrderDetail set SavingProduct=@SavingProduct,SPMoney=@SPMoney,SPPaymentAget=@SPPaymentAget,
-                                SecurityProduct=@SecurityProduct，SEPMoney=@SEPMoney，SEPPaymentAge=@SEPPaymentAge，
-                               CreateTime=@CreateTime where Id=@Id ";
+                string sql = @"update OrderDetail set SavingProduct=@SavingProduct,SPMoney=@SPMoney,SPPaymentAge=@SPPaymentAge,CreateTime=@CreateTime where Id=@Id ";
                 return conn.Execute(sql, model) > 0;
             }
         }

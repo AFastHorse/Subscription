@@ -1,17 +1,22 @@
-﻿
-@model BootstrapDemo.Models.SubscriptionTarget
+﻿@using BootstrapDemo.Models
+@model Models.Orders
 
 @{
-    ViewBag.Title = "认购目标";
+    ViewBag.Title = "开门红目标";
 }
 
-<h2>认购目标</h2>
+<h2>开门红目标</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
+        @Html.Hidden("UserName", (string)ViewBag.UserName)
+        @Html.Hidden("Sex", (string)ViewBag.Sex)
+        @Html.Hidden("UserCode", (string)ViewBag.UserCode)
+        @Html.Hidden("API", 0)
+        @Html.Hidden("TotalMoney", 0)
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="subscriptTarget" id="form1">
@@ -19,48 +24,232 @@
         </div>
         <hr />
         <div class="form-group" id="addMore">
-            <div class="col-md-12">
-                <input type="button" id="btnAddMore" value="增加认购目标" class="btn btn-default" />
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btnAddMore" value="增加开门红目标" class="btn btn-default" />
+            </div>
+        </div>
+        <hr />
+        <div class="form-group">
+            <label class="control-label col-md-2" for="FMX_Count">福满星产品件数</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" id="FMX_Count" name="FMX_Count" type="number" value="">
             </div>
         </div>
         <div class="form-group">
-            @Html.LabelFor(model => model.Destination, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2" for="FMX_Money">福满星产品保费</label>
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Destination, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Destination, "", new { @class = "text-danger" })
+                <input class="form-control text-box single-line" id="FMX_Money" name="FMX_Money" type="number" value="">
             </div>
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Remark, htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.Destination, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.EditorFor(model => model.Remark, new { htmlAttributes = new { @class = "form-control" } })
-                @Html.ValidationMessageFor(model => model.Remark, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(m => m.Destination, ViewData["destination"] as List<SelectListItem>, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                <h4 id="global_destination"></h4>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-12">
+                <h5>
+                    注：累计承保金瑞产品API
+                    3万（含）以上   国内游
+                    9万（含）以上   吉隆坡仙本那
+                    18万（含）以上   英国伦敦
+                    3年交折标0.3 、5年交折标0.5 、10年交不折标
+                </h5>
             </div>
         </div>
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
-                <input type="button" id="nextPage" value="下一步" class="btn btn-default" />
+                <input type="button" id="nextPage" value="保存" class="btn btn-default" />
             </div>
         </div>
     </div>
 }
-
-<div>
-    @Html.ActionLink("返回首页", "Index")
+<div class="row">
+    <div class="col-md-offset-2 col-md-10">
+        @Html.ActionLink("返回首页", "Index")
+    </div>
 </div>
 @section scripts{
     <script>
         var index = 2;
         $(function () {
+            $('#Destination').change(bindDestinationChange);
             $('#btnAddMore').click(function () {
                 $('#addMore').before('<div class="subscriptTarget" id="form' + index + '"></div><hr />');
-                $('#form' + index).load('/Home/Partialform/?index=' + index);
+                $('#form' + index).load('/Home/Partialform/?index=' + index, function () {
+                    $('.money').unbind();
+                    $('.sel_pay_age').unbind();
+                    $('.sel_saving').unbind();
+                    $('.money').keyup(payTotalMoney);
+                    $('.sel_pay_age').change(payTotalMoney);
+                    $('.sel_saving').change(changeAgeShowState);
+                    $('.sel_saving').each(function (i, val) {
+                        var dataIndex = $(this).attr("data-index");
+                        if ($(this).val() == 1) {
+                            $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
+                            $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
+                        } else {
+                            var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                            obj.options.add(new Option("10年", "10"));
+                            //$("#SavingProducts_PaymentAge_" + dataIndex).append("<option value=\"10\">10年</option>");
+                        }
+                    });
+                });
                 index++;
             });
             $('#nextPage').click(function () {
-                window.location = '/Home/SubscriptionSuccess';
+                var destination = $('#Destination').find("option:selected").text();
+                var api = $('#API').val() == "" ? "0" : $('#API').val();
+                var isPass = true;
+                switch (destination) {
+                    case "英国伦敦":
+                        if (parseInt(api) < 180000) {
+                            destination = '';
+                            isPass = false;
+                        }
+                        break;
+                    case "吉隆坡仙本那":
+                        if (parseInt(api) < 90000) {
+                            destination = '';
+                            isPass = false;
+                        }
+                        break;
+                    case "国内游":
+                        if (parseInt(api) < 30000) {
+                            destination = '';
+                            isPass = false;
+                        }
+                        break;
+                }
+
+                var userName = $('#UserName').val();
+                var sex = $('#Sex').val();
+                var userCode = $('#UserCode').val();
+                var fmx_money = $('#FMX_Money').val() == "" ? "0" : $('#FMX_Money').val();
+                var fmx_count = $('#FMX_Count').val() == "" ? "0" : $('#FMX_Count').val();
+                var totalMoney = parseInt($('#TotalMoney').val() == "" ? "0" : $('#TotalMoney').val()) + parseInt(fmx_money);
+
+                destination == "请选择" ? '' : destination;
+                var list = [];
+                $('.subscriptTarget').each(function (i, val) {
+                    var obj = {
+                        SavingProduct: $('#SavingProducts_' + (i + 1)).val(),
+                        SPMoney: $('#SavingProducts_Money_' + (i + 1)).val() == '' ? "0" : $('#SavingProducts_Money_' + (i + 1)).val(),
+                        SPPaymentAge: $('#SavingProducts_PaymentAge_' + (i + 1)).val(),
+                        ProductType: 1
+                    };
+                    list.push(obj);
+                });
+
+                $.ajax({
+                    url: '/Home/SubscriptionTarget/',
+                    type: 'post',
+                    dataType: 'json',
+                    data: {
+                        UserName: userName,
+                        Sex: sex,
+                        UserCode: userCode,
+                        Destination: $('#Destination').val(),
+                        TotalMoney: totalMoney,
+                        FMX_Money: fmx_money,
+                        FMX_Count: fmx_count,
+                        API: api,
+                        list: JSON.stringify(list)
+                    },
+                    success: function (data) {
+                        if (data.success == 0) {
+                            if (parseInt(api) >= 30000 && isPass && destination != "请选择") {
+                                window.location = '/Home/SubscriptionSuccess?orderNo=' + data.orderNo + "&destination="
+                                    + destination + "&api=" + api + "&sex=" + sex;
+                            } else {
+                                window.location = '/Home/SubmitSuccess?orderNo=' + data.orderNo + "&api=" + api + "&sex=" + sex;
+                            }
+                        }
+                    }
+                });
+            });
+            $('.money').keyup(payTotalMoney);
+            $('.sel_pay_age').change(payTotalMoney);
+            $('.sel_saving').change(changeAgeShowState);
+            $('.sel_saving').each(function (i, val) {
+                var dataIndex = $(this).attr("data-index");
+                if ($(this).val() == 1) {
+                    $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
+                    $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
+                } else {
+                    var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                    obj.options.add(new Option("10年", "10"));
+                }
             });
         });
+        function changeAgeShowState() {
+            var dataIndex = $(this).attr("data-index");
+            if ($(this).val() == 1) {
+                $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
+                $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
+            } else {
+                var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                obj.options.add(new Option("10年", "10"));
+            }
+        }
+        function payTotalMoney() {
+            var money = 0;
+            var api = 0;
+            $('.subscriptTarget').each(function (i, val) {
+                var sp_age = $('#SavingProducts_PaymentAge_' + (i + 1)).val();
+                sp_age = sp_age == "" ? "0" : sp_age;
+                var sp_money = $('#SavingProducts_Money_' + (i + 1)).val();
+                if (sp_money != '') {
+                    money += parseInt(sp_money);
+                    switch (parseInt(sp_age)) {
+                        case 3:
+                            api += parseInt(sp_money) * 0.3;
+                            break;
+                        case 5:
+                            api += parseInt(sp_money) * 0.5;
+                            break;
+                        case 10:
+                            api += parseInt(sp_money);
+                            break;
+                    }
+                }
+            });
+            $('#API').val(api);
+            $('#TotalMoney').val(money);
+            bindDestinationChange();
+        }
+        function bindDestinationChange() {
+            var api = parseInt($('#API').val() == '' ? "0" : $('#API').val());
+            var destination = $('#Destination').val();
+            var result = '';
+            var unReach = '您的累计承保金金瑞产品API未达到金瑞直通车目的地要求，请增加您的认购目标。';
+            if (destination == 3) {
+                if (api >= 180000) {
+                    result = '恭喜您认购目标达成英国伦敦旅游方案。';
+                } else {
+                    result = unReach;
+                }
+            } else if (destination == 2) {
+                if (api >= 90000) {
+                    result = '恭喜您认购目标达成吉隆坡仙本那旅游方案。';
+                } else {
+                    result = unReach;
+                }
+            } else if (destination == 1) {
+                if (api >= 30000) {
+                    result = '恭喜您认购目标达成国内游旅游方案。';
+                } else {
+                    result = unReach;
+                }
+            }
+            $('#global_destination').html(result);
+        }
     </script>
 }

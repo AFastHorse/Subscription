@@ -1,0 +1,6 @@
+F:\gaoyuwei\Subscription\BMS\Model\bin\Release\Model.dll
+F:\gaoyuwei\Subscription\BMS\Model\bin\Release\Model.pdb
+F:\gaoyuwei\Subscription\BMS\Model\obj\Release\Models.csprojAssemblyReference.cache
+F:\gaoyuwei\Subscription\BMS\Model\obj\Release\Models.csproj.CoreCompileInputs.cache
+F:\gaoyuwei\Subscription\BMS\Model\obj\Release\Model.dll
+F:\gaoyuwei\Subscription\BMS\Model\obj\Release\Model.pdb

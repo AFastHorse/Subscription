@@ -18,11 +18,28 @@ namespace DAL
                 return conn.QueryFirstOrDefault<Orders>(sql, new { Id = id });
             }
         }
+        public Orders GetModel(string orderNo)
+        {
+            using (var conn = OpenConnection())
+            {
+                string sql = "select * from Orders where OrderNo=@OrderNo";
+                return conn.QueryFirstOrDefault<Orders>(sql, new { OrderNo = orderNo });
+            }
+        }
+        public Orders GetModelByCondition(string strWhere)
+        {
+            using (var conn = OpenConnection())
+            {
+                string sql = "select * from Orders where 1=1 " + strWhere;
+                return conn.QueryFirstOrDefault<Orders>(sql);
+            }
+        }
         public bool Add(Orders model)
         {
             using (var conn = OpenConnection())
             {
-                string sql = "insert into Orders(Destination,CreateTime,CreateId,OrderNo) values (@Destination,@CreateTime,@CreateId,@OrderNo)";
+                string sql = @"insert into Orders(Destination,CreateTime,OrderNo,UserName,Sex,UserCode,TotalMoney,API,FMX_Money,FMX_Count) 
+                            values (@Destination,@CreateTime,@OrderNo,@UserName,@Sex,@UserCode,@TotalMoney,@API,@FMX_Money,@FMX_Count)";
                 return conn.Execute(sql, model) > 0;
             }
         }
@@ -30,10 +47,11 @@ namespace DAL
         {
             using (var conn = OpenConnection())
             {
-                string sql = "update Orders set Destination=@Destination,CreateId=@CreateId where Id=@Id ";
+                string sql = "update Orders set Destination=@Destination,UserName=@UserName,Sex=@Sex,TotalMoney=@TotalMoney,API=@API,FMX_Money=@FMX_Money,FMX_Count=@FMX_Count where Id=@Id ";
                 return conn.Execute(sql, model) > 0;
             }
         }
+
         public bool Delete(int id)
         {
             using (var conn = OpenConnection())
@@ -57,14 +75,28 @@ namespace DAL
         {
             using (var conn = OpenConnection())
             {
-                string sqlStr = @"select * from [Orders] where 1=1 " + strWhere + " Order by CreateTime";
+                string sqlStr = @"select * from [Orders] where 1=1 " + strWhere + " Order by CreateTime desc";
                 if (pageSize != 0)
                 {
-                    sqlStr = @"select top " + pageSize + @" * from (select row_number() over(order by CreateTime) as rownumber,
-                            * from Orders where 1=1 " + strWhere + @") dept where rownumber between " + ((pageIndex - 1) * pageSize + 1)
-                            + " and " + pageIndex * pageSize + strWhere + " Order by CreateTime";
+                    sqlStr = @"select top " + pageSize + @" * from (select row_number() over(order by CreateTime desc) as rownumber,
+                            * from Orders where 1=1 " + strWhere + @") orders where rownumber between " + ((pageIndex - 1) * pageSize + 1)
+                            + " and " + pageIndex * pageSize + strWhere + " Order by CreateTime desc";
                 }
                 return conn.Query<Orders>(sqlStr).ToList();
+            }
+        }
+        public List<Orders_Detail> GetOrder_DetailList(string strWhere, int pageIndex, int pageSize)
+        {
+            using (var conn = OpenConnection())
+            {
+                string sqlStr = @"select * from [Order_detail] where 1=1 " + strWhere + " Order by CreateTime desc";
+                if (pageSize != 0)
+                {
+                    sqlStr = @"select top " + pageSize + @" * from (select row_number() over(order by CreateTime desc) as rownumber,
+                            * from Order_detail where 1=1 " + strWhere + @") orders where rownumber between " + ((pageIndex - 1) * pageSize + 1)
+                            + " and " + pageIndex * pageSize + strWhere + " Order by CreateTime desc";
+                }
+                return conn.Query<Orders_Detail>(sqlStr).ToList();
             }
         }
         /// <summary>

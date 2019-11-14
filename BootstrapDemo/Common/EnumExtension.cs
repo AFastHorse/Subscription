@@ -47,5 +47,53 @@ namespace BootstrapDemo.Common
             }
             return listItem;
         }
+        public static IList<SelectListItem> ToSelectIntList(Type enumType)
+        {
+            IList<SelectListItem> listItem = new List<SelectListItem>();
+            if (enumType.IsEnum)
+            {
+                FieldInfo[] fields = enumType.GetFields();
+                if (fields.Length > 1)
+                {
+                    for (int i = 1; i < fields.Length; i++)
+                    {
+                        listItem.Add(new SelectListItem
+                        {
+                            Value = ((int)fields[i].GetValue(null)).ToString(),
+                            Text = GetEnumDescription(fields[i])
+                        });
+                    }
+                }
+            }
+            else
+            {
+                throw new ArgumentException("请传入正确的枚举！");
+            }
+            return listItem;
+        }
+        public static string GetDesctiption(Type enumType, int enumValue)
+        {
+            IList<SelectListItem> listItem = new List<SelectListItem>();
+            if (enumType.IsEnum)
+            {
+                FieldInfo[] fields = enumType.GetFields();
+                if (fields.Length > 1)
+                {
+                    for (int i = 1; i < fields.Length; i++)
+                    {
+                        if (enumValue == (int)fields[i].GetValue(null))
+                        {
+                            return GetEnumDescription(fields[i]);
+                        }
+                    }
+                }
+            }
+            else
+            {
+                throw new ArgumentException("请传入正确的枚举！");
+            }
+            return string.Empty;
+        }
+
     }
 }

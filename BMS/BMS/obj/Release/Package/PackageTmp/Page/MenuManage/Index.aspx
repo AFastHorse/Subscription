@@ -61,9 +61,9 @@
                     [
                         { type: "checkbox", fixed: "left" },
                         { field: "Name", width: 200, title: "名称" },
-                        { field: "Url", title: "链接地址", width: 400, align: 'center' },
+                        { field: "Url", title: "链接地址", width: 300, align: 'center' },
                         { field: "OrderNum", title: "排序号", width: 120, align: 'center' },
-                        { field: "Remark", title: "备注", width: 300, align: "center" },
+                        { field: "Remark", title: "备注", width: 200, align: "center" },
                         { title: "操作", width: 150, align: "center", fixed: "right", toolbar: "#table-content-list" }
                     ]
                 ],

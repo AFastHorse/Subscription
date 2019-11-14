@@ -1,0 +1,13 @@
+
+.shareImg {
+    z-index: 6;
+    opacity: 1;
+    position: absolute;
+    top: 65px;
+    right: 0;
+    width: 100%;
+}
+
+    .shareImg img {
+        width: 100%;
+    }

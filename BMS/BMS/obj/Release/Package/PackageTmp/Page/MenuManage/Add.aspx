@@ -29,13 +29,7 @@
             <div class="layui-input-inline" style="width: 500px;">
                 <input type="text" name="Url" id="txtUrl" lay-verify="required" placeholder="Url" autocomplete="off" class="layui-input">
             </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">图标</label>
-            <div class="layui-input-inline" style="width: 500px;">
-                <input type="text" name="CssTheme" id="txtCssTheme" placeholder="图标" autocomplete="off" class="layui-input">
-            </div>
-        </div>
+        </div>       
         <div class="layui-form-item">
             <label class="layui-form-label">备注</label>
             <div class="layui-input-inline" style="width: 500px;">

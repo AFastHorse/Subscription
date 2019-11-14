@@ -28,7 +28,7 @@
                     <div class="layui-inline">
                         <button class="layui-btn layuiadmin-btn-list" data-type="expandAll">全部展开</button>
                         <button class="layui-btn layuiadmin-btn-list" data-type="foldAll">全部折叠</button>
-                        <%--<button class="layui-btn layuiadmin-btn-list" data-type="batchdel">批量删除</button>--%>
+                        <button class="layui-btn layuiadmin-btn-list" data-type="add">新增部门</button>
                     </div>
                 </div>
             </div>
@@ -64,7 +64,7 @@
         function edit(id) {
             layer.open({
                 type: 2,
-                title: "编辑用户",
+                title: "编辑部门",
                 content: "/Page/DeptManage/Add.aspx?id=" + id,
                 maxmin: true,
                 area: ["700px", "350px"],
@@ -121,7 +121,7 @@
                 treetable = layui.treetable;
 
             renderTable = function () {
-                // 渲染表格
+                // 渲染表格               
                 treetable.render({
                     treeColIndex: 2,
                     treeSpid: -1,
@@ -129,13 +129,12 @@
                     treePidName: 'ParentId',
                     treeDefaultClose: false,
                     elem: '#LAY-app-content-list',
-                    url: '/Page/DeptManage/DeptHandler.ashx?operation=GetList&type=GetList&r=' + Math.random(),
+                    url: '/Page/DeptManage/DeptHandler.ashx?operation=GetList&r=' + Math.random(),
                     cols: [
                           [
                               { type: 'checkbox', width: 80 },
                               { type: 'numbers', title: '序号', width: 100 },
-                              { field: "Name", width: 200, title: "名称", align: 'center' },
-                              { field: "Code", width: 300, title: "编码" },
+                              { field: "DepartName", width: 200, title: "名称", align: 'center' },
                               { field: "OrderNum", width: 80, title: "排序号", align: "center" },
                               { field: "Remark", width: 200, title: "备注", align: 'left' },
                               {
@@ -145,7 +144,7 @@
                                       var editStr = '<a class="layui-btn layui-btn-normal layui-btn-xs" onclick="edit(\'' + d.Id
                                           + '\');"><i class="layui-icon layui-icon-edit"></i>编辑</a>';
                                       var delStr = '<a class="layui-btn layui-btn-danger layui-btn-xs" onclick="deleteDept(\'' + d.Id
-                                          + '\',\'' + d.Name + '\');"><i class="layui-icon layui-icon-delete"></i>删除</a>';
+                                          + '\',\'' + d.DepartName + '\');"><i class="layui-icon layui-icon-delete"></i>删除</a>';
                                       if (d.Id == 0) {
                                           return addStr;
                                       } else {

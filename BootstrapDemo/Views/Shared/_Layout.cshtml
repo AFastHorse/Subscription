@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>@ViewBag.Title - 认购平台</title>
+    <title>@ViewBag.Title - 目标平台</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -27,11 +27,11 @@
             </div>
         </div>
     </div>
-    <div class="container-fluid body-content">
+    <div id="subApp" ref="subApp" class="container-fluid body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - 认购平台</p>
+        <footer data-html2canvas-ignore>
+            <p style="margin-left: 10px;">&copy;@DateTime.Now.Year- 认购平台</p>
         </footer>
     </div>
 

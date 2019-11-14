@@ -5,15 +5,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head id="Head1" runat="server">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
     <meta charset="utf-8" />
-    <title>天华教育管理系统</title>
+    <title>认购平台管理</title>
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <link rel="stylesheet" href="/Scripts/layui/css/layui.css" media="all" />
     <link rel="stylesheet" href="/Scripts/css/admin.css" media="all" />
-
     <style>
         .noClick {
             pointer-events: none;
@@ -36,38 +34,34 @@
         function updateUserMsg() {
             layer.open({
                 type: 2
-              , title: '修改资料'
-              , content: '/Page/UserManage/UserMessage.aspx'
-              , maxmin: false
-              , area: ['460px', '280px']
-              , btn: ['保存', '取消']
-              , yes: function (index, layero) {
-                  var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
-                  submit.click();
-              }
+                , title: '修改资料'
+                , content: '/Page/UserManage/UserMessage.aspx'
+                , maxmin: false
+                , area: ['460px', '280px']
+                , btn: ['保存', '取消']
+                , yes: function (index, layero) {
+                    var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
+                    submit.click();
+                }
             });
         }
         function changePassword() {
             layer.open({
                 type: 2
-              , title: '修改密码'
-              , content: '/Page/UserManage/ChangePwd.aspx'
-              , maxmin: false
-              , area: ['460px', '300px']
-              , btn: ['确定', '取消']
-              , yes: function (index, layero) {
-                  var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
-                  submit.click();
-              }
+                , title: '修改密码'
+                , content: '/Page/UserManage/ChangePwd.aspx'
+                , maxmin: false
+                , area: ['460px', '300px']
+                , btn: ['确定', '取消']
+                , yes: function (index, layero) {
+                    var submit = layero.find('iframe').contents().find("#layuiadmin-app-form-submit");
+                    submit.click();
+                }
             });
         }
-        $(function () {
-
-        });
     </script>
 </head>
 <body class="layui-layout-body">
-
     <div id="LAY_app">
         <div class="layui-layout layui-layout-admin">
             <div class="layui-header" style="line-height: 40px; height: 40px; width: 220px; right: 0px;">
@@ -90,9 +84,9 @@
                             <cite><%=UserName %></cite>
                         </a>
                         <dl class="layui-nav-child" <%=(IsLogin?"":"style=\"display:none;\"") %>>
-                            <dd><a href="javascript:void(0);" onclick="updateUserMsg();">基本资料</a></dd>
+                            <%--<dd><a href="javascript:void(0);" onclick="updateUserMsg();">基本资料</a></dd>
                             <dd><a href="javascript:void(0);" onclick="changePassword();">修改密码</a></dd>
-                            <hr>
+                            <hr>--%>
                             <dd style="text-align: center; cursor: pointer;" onclick="signOut();"><a>退出</a></dd>
                         </dl>
                     </li>
@@ -102,8 +96,8 @@
             <!-- 侧边菜单 -->
             <div class="layui-side layui-side-menu">
                 <div class="layui-side-scroll">
-                    <div class="layui-logo" lay-href="/Page/PersonalCustomer/Index.aspx">
-                        <span>天华教育管理系统</span>
+                    <div class="layui-logo" lay-href="/Page/MenuManage/Index.aspx">
+                        <span>认购平台管理</span>
                     </div>
 
                     <ul class="layui-nav layui-nav-tree" lay-shrink="all" id="LAY-system-side-menu" lay-filter="layadmin-system-side-menu">
@@ -129,7 +123,7 @@
                 </div>
                 <div class="layui-tab" lay-unauto lay-allowclose="true" lay-filter="layadmin-layout-tabs">
                     <ul class="layui-tab-title" id="LAY_app_tabsheader">
-                        <li id="liindexPage" lay-id="/Page/PersonalCustomer/Index.aspx" lay-attr="/Page/Message/Index.aspx" class="layui-this">我的客户</li>
+                        <li id="liindexPage" lay-id="/Page/SubscriptionManage/Index.aspx" lay-attr="/Page/SubscriptionManage/Index.aspx" class="layui-this">认购管理</li>
                     </ul>
                 </div>
             </div>
@@ -138,7 +132,7 @@
             <!-- 主体内容 -->
             <div class="layui-body" id="LAY_app_body" style="top: 40px;">
                 <div class="layadmin-tabsbody-item layui-show">
-                    <iframe id="ifmMain" src="/Page/PersonalCustomer/Index.aspx" frameborder="0" class="layadmin-iframe"></iframe>
+                    <iframe id="ifmMain" src="/Page/SubscriptionManage/Index.aspx" frameborder="0" class="layadmin-iframe"></iframe>
                 </div>
             </div>
 
@@ -150,7 +144,7 @@
         {{#  layui.each(d, function(index, item){ }}                 
          <li data-name="home" class="layui-nav-item layui-nav-itemed">
              <a lay-href="{{item.Url}}" lay-tips="{{item.Name}}" lay-direction="2">
-                 <i class="{{item.CssTheme}}"></i>
+                 <%--<i class="{{item.CssTheme}}"></i>--%>
                  <cite>{{item.Name}}</cite>
              </a>
          </li>
