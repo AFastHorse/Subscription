@@ -139,13 +139,16 @@
                 destination == "请选择" ? '' : destination;
                 var list = [];
                 $('.subscriptTarget').each(function (i, val) {
+                    var spMoney = $('#SavingProducts_Money_' + (i + 1)).val() == '' ? "0" : $('#SavingProducts_Money_' + (i + 1)).val()
                     var obj = {
                         SavingProduct: $('#SavingProducts_' + (i + 1)).val(),
-                        SPMoney: $('#SavingProducts_Money_' + (i + 1)).val() == '' ? "0" : $('#SavingProducts_Money_' + (i + 1)).val(),
+                        SPMoney: spMoney,
                         SPPaymentAge: $('#SavingProducts_PaymentAge_' + (i + 1)).val(),
                         ProductType: 1
                     };
-                    list.push(obj);
+                    if (parseInt(spMoney)) {
+                        list.push(obj);
+                    }
                 });
 
                 $.ajax({

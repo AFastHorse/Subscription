@@ -82,7 +82,10 @@ namespace BootstrapDemo.Controllers
                 }
                 if (bll.Add(model))
                 {
-                    detailBll.Add(list);
+                    if (list.Count > 0)
+                    {
+                        detailBll.Add(list);
+                    }
                     return Json(new { success = 0, msg = "保存成功", orderNo = model.OrderNo });
                 }
                 return Json(new { success = 1, msg = "保存失败" });

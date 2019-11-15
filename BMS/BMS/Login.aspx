@@ -9,12 +9,12 @@
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" href="/Scripts/layui/css/layui.css" media="all" />
-    <link rel="stylesheet" href="/Scripts/css/admin.css" media="all" />
-    <link rel="stylesheet" href="/Scripts/css/login.css" media="all" />
+    <link rel="stylesheet" href="~/Scripts/layui/css/layui.css" media="all" />
+    <link rel="stylesheet" href="~/Scripts/css/admin.css" media="all" />
+    <link rel="stylesheet" href="~/Scripts/css/login.css" media="all" />
 
-    <script src="/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="/Scripts/jquery.cookie-1.4.1.min.js"></script>
+    <script src="Scripts/jquery-3.3.1.min.js"></script>
+    <script src="Scripts/jquery.cookie-1.4.1.min.js"></script>
     <script type="text/javascript">
         $(function () {
             $(document).keydown(function (event) {
@@ -39,7 +39,7 @@
             var userName = $('#txtName').val();
             var password = $('#txtPwd').val();
             $.ajax({
-                url: '/LoginHandler.ashx?action=Login',
+                url: 'LoginHandler.ashx?action=Login',
                 async: false,
                 beforeSend: function () {
                     $('#txtPwd').val('');
@@ -62,7 +62,7 @@
                                 $.cookie('bms', null);
                             }
                         }
-                        window.location.href = "/Page/Main.aspx";
+                        window.location.href = "Page/Main.aspx";
                     } else {
                         layer.alert(data.result);
                     }
@@ -107,10 +107,10 @@
         </div>
     </div>
 
-    <script src="/Scripts/layui/layui.js?r=3"></script>
+    <script src="Scripts/layui/layui.js?r=3"></script>
     <script>
         layui.config({
-            base: '/Scripts/js/' //静态资源所在路径
+            base: 'Scripts/js/' //静态资源所在路径
         }).extend({
             index: 'lib/index' //主入口模块
         }).use(['index', 'form', 'commonFun'], function () {

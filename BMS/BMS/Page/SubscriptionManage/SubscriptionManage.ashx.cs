@@ -72,7 +72,7 @@ namespace BMS.Page.SubscriptionManage
 
             if (!string.IsNullOrEmpty(name))
             {
-                strWhere += " and Name like '%" + name + "%' ";
+                strWhere += " and UserName like '%" + name + "%' ";
             }
             if (context.User != null)
             {

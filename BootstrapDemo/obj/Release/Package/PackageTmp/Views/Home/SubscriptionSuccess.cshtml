@@ -3,7 +3,7 @@
 @{
     /**/
 
-    ViewBag.Title = "认购成功";
+    ViewBag.Title = "提交成功";
 }
 @section styles{
     <link href="~/Content/success.css" rel="stylesheet" />
@@ -137,14 +137,14 @@
     <div class="content">
         <div class="row">
             <div class="col-md-12 content_kh">
-                <h3>尊敬的<span>@(Model.UserName)</span><br /><span class="cgrz"> 您的开门目标为：@(ViewBag.Destination)旅游方案</span></h3>
+                <h3>尊敬的<span>@(Model.UserName + ViewBag.Sex)</span><br /><span class="cgrz"> 您的开门红目标为：@(ViewBag.Destination)旅游方案</span></h3>
             </div>
         </div>
         <div class="row content_nr">
             <div class="col-md-12 end ">
                 <ul>
                     <li><p>产品目标：</p></li>
-                    <li><p><span class="type">储蓄类产品</span><span class="number">@ViewBag.Saving_Count 件</span><span class="price">保费 @(Convert.ToInt32(ViewBag.Saving_Money))元</span></p></li>
+                    <li @((int)ViewBag.Saving_Count > 0 ? "" : "style=\"display:none;\"")><p><span class="type">储蓄类产品</span><span class="number">@ViewBag.Saving_Count 件</span><span class="price">保费 @(Convert.ToInt32(ViewBag.Saving_Money))元</span></p></li>
                     <li><p><span class="type">福满星产品</span><span class="number">@Model.FMX_Count 件</span><span class="price">保费 @(Model.FMX_Money)元</span></p></li>
                     <li><p class="api">累计API：@(Convert.ToInt32(ViewBag.API) + Convert.ToInt32(Model.FMX_Money))</p></li>
                 </ul>

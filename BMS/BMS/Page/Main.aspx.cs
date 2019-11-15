@@ -27,7 +27,7 @@ namespace BMS.Pages
                 }
                 else
                 {
-                    Response.Redirect("/Login.aspx");
+                    Response.Redirect("../Login.aspx");
                 }
             }
         }

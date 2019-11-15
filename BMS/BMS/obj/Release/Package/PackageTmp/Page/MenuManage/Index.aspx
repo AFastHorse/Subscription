@@ -8,8 +8,8 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="/Scripts/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="/Scripts/css/admin.css" media="all">
+    <link rel="stylesheet" href="../../Scripts/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../Scripts/css/admin.css" media="all">
 </head>
 <body>
     <div class="layui-fluid">
@@ -42,10 +42,10 @@
         </div>
     </div>
 
-    <script src="/Scripts/layui/layui.js"></script>
+    <script src="../../Scripts/layui/layui.js"></script>
     <script>
         layui.config({
-            base: '/Scripts/js/' //静态资源所在路径
+            base: '../../Scripts/js/' //静态资源所在路径
         }).extend({
             index: 'lib/index' //主入口模块
         }).use(['index', 'form', 'table'], function () {
@@ -56,7 +56,7 @@
 
             table.render({
                 elem: "#LAY-app-content-list",
-                url: '/Page/MenuManage/MenuHandler.ashx?operation=GetList&r=' + Math.random(),
+                url: 'MenuHandler.ashx?operation=GetList&r=' + Math.random(),
                 cols: [
                     [
                         { type: "checkbox", fixed: "left" },
@@ -95,7 +95,7 @@
                             }
                         }, function (e) {
                             $.ajax({
-                                url: '/Page/MenuManage/MenuHandler.ashx?operation=Delete',
+                                url: 'MenuHandler.ashx?operation=Delete',
                                 dataType: 'json',
                                 type: 'Post',
                                 data: { id: row.Id, name: row.UserName, realName: row.RealName },
@@ -114,7 +114,7 @@
                         layer.open({
                             type: 2,
                             title: "编辑菜单",
-                            content: "/Page/MenuManage/Add.aspx?id=" + row.Id,
+                            content: "Add.aspx?id=" + row.Id,
                             maxmin: true,
                             area: ["700px", "350px"],
                             btn: ["确定", "取消"],
@@ -175,7 +175,7 @@
                         }
                     }, function (index) {
                         $.ajax({
-                            url: "/Page/MenuManage/MenuHandler.ashx?operation=BatchDelete",
+                            url: "MenuHandler.ashx?operation=BatchDelete",
                             dataType: 'json',
                             type: 'Post',
                             data: { ids: ids, names: names },
@@ -195,7 +195,7 @@
                     layer.open({
                         type: 2
                       , title: '新增菜单'
-                      , content: '/Page/MenuManage/Add.aspx'
+                      , content: 'Add.aspx'
                       , maxmin: true
                       , area: ['700px', '350px']
                       , btn: ['确定', '取消']

@@ -14,12 +14,12 @@ namespace BMS.Custom
             {
                 if (((FormsPrincipal)user).UserData.RoleId != 1)
                 {
-                    HttpContext.Current.Response.Redirect("/Login.aspx");
+                    HttpContext.Current.Response.Redirect("../Login.aspx");
                 }
             }
             else
             {
-                HttpContext.Current.Response.Redirect("/Login.aspx");
+                HttpContext.Current.Response.Redirect("../Login.aspx");
             }
         }
     }

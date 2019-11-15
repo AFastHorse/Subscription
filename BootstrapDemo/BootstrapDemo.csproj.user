@@ -9,7 +9,7 @@
     <WebStackScaffolding_LayoutPageFile />
     <NameOfLastUsedPublishProfile>Subscription</NameOfLastUsedPublishProfile>
     <ProjectView>ProjectFiles</ProjectView>
-    <LastActiveSolutionConfig>Debug|Any CPU</LastActiveSolutionConfig>
+    <LastActiveSolutionConfig>Release|Any CPU</LastActiveSolutionConfig>
     <Use64BitIISExpress />
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />

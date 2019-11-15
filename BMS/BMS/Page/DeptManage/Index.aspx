@@ -8,8 +8,8 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="/Scripts/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="/Scripts/css/admin.css" media="all">
+    <link rel="stylesheet" href="../../Scripts/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../Scripts/css/admin.css" media="all">
     <style>
         .layui-icon-layer:before {
             content: "\e656";
@@ -43,15 +43,15 @@
             </div>
         </div>
     </div>
-    <script src="/Scripts/jquery-3.3.1.min.js"></script>
-    <script src="/Scripts/layui/layui.js"></script>
+    <script src="../../Scripts/jquery-3.3.1.min.js"></script>
+    <script src="../../Scripts/layui/layui.js"></script>
     <script>
         var renderTable = '';
         function addChild(id) {
             layer.open({
                 type: 2
                 , title: '新增部门'
-                , content: '/Page/DeptManage/Add.aspx?parentId=' + id
+                , content: 'Add.aspx?parentId=' + id
                 , maxmin: true
                 , area: ['700px', '350px']
                 , btn: ['确定', '取消']
@@ -65,7 +65,7 @@
             layer.open({
                 type: 2,
                 title: "编辑部门",
-                content: "/Page/DeptManage/Add.aspx?id=" + id,
+                content: "Add.aspx?id=" + id,
                 maxmin: true,
                 area: ["700px", "350px"],
                 btn: ["确定", "取消"],
@@ -95,7 +95,7 @@
                 }
             }, function (e) {
                 $.ajax({
-                    url: '/Page/DeptManage/DeptHandler.ashx?operation=Delete',
+                    url: 'DeptHandler.ashx?operation=Delete',
                     dataType: 'json',
                     type: 'Post',
                     data: { id: id, name: name },
@@ -111,7 +111,7 @@
             });
         }
         layui.config({
-            base: '/Scripts/js/' //静态资源所在路径
+            base: '../../Scripts/js/' //静态资源所在路径
         }).extend({
             index: 'lib/index' //主入口模块
         }).use(['index', 'form', 'table', 'treetable'], function () {
@@ -129,7 +129,7 @@
                     treePidName: 'ParentId',
                     treeDefaultClose: false,
                     elem: '#LAY-app-content-list',
-                    url: '/Page/DeptManage/DeptHandler.ashx?operation=GetList&r=' + Math.random(),
+                    url: 'DeptHandler.ashx?operation=GetList&r=' + Math.random(),
                     cols: [
                           [
                               { type: 'checkbox', width: 80 },

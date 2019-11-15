@@ -8,8 +8,8 @@
     <meta name="renderer" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-    <link rel="stylesheet" href="/Scripts/layui/css/layui.css" media="all" />
-    <link href="/Content/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../Scripts/layui/css/layui.css" media="all" />
+    <link href="../../Content/themes/base/jquery-ui.css" rel="stylesheet" />
 </head>
 <body>
     <div class="layui-form" lay-filter="form1" id="form1" style="padding: 20px 30px 0 0;">
@@ -40,11 +40,11 @@
         </div>
     </div>
 
-    <script src="/Scripts/layui/layui.js"></script>
+    <script src="../../Scripts/layui/layui.js"></script>
 
     <script>
         layui.config({
-            base: '/Scripts/js/' //静态资源所在路径
+            base: '../../Scripts/js/' //静态资源所在路径
         }).extend({
             index: 'lib/index' //主入口模块
         }).use(['index', 'form'], function () {
@@ -54,7 +54,7 @@
             if (id != '') {
                 $('#hidId').val(id);
                 $.ajax({
-                    url: '/Page/DeptManage/DeptHandler.ashx?operation=GetModel',
+                    url: 'DeptHandler.ashx?operation=GetModel',
                     async: false,
                     dataType: 'json',
                     type: 'Post',
@@ -68,7 +68,7 @@
             } else {
                 var parentId = '<%=Request["parentId"]%>';
                 $.ajax({
-                    url: '/Page/DeptManage/DeptHandler.ashx?operation=GetMaxCode&parentId=' + parentId,
+                    url: 'DeptHandler.ashx?operation=GetMaxCode&parentId=' + parentId,
                     async: false,
                     dataType: 'json',
                     type: 'Post',
@@ -89,7 +89,7 @@
 
                 //提交 Ajax 成功后，关闭当前弹层并重载表格
                 $.ajax({
-                    url: '/Page/DeptManage/DeptHandler.ashx?operation=Add',
+                    url: 'DeptHandler.ashx?operation=Add',
                     dataType: 'json',
                     type: 'Post',
                     data: { model: JSON.stringify(field) },

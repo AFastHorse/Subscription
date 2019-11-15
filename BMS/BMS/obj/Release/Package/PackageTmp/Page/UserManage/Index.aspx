@@ -8,8 +8,8 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" href="/Scripts/layui/css/layui.css" media="all">
-    <link rel="stylesheet" href="/Scripts/css/admin.css" media="all">
+    <link rel="stylesheet" href="../../Scripts/layui/css/layui.css" media="all">
+    <link rel="stylesheet" href="../../Scripts/css/admin.css" media="all">
 </head>
 <body>
     <div class="layui-fluid">
@@ -43,10 +43,10 @@
         </div>
     </div>
 
-    <script src="/Scripts/layui/layui.js"></script>
+    <script src="../../Scripts/layui/layui.js"></script>
     <script>
         layui.config({
-            base: '/Scripts/js/' //静态资源所在路径
+            base: '../../Scripts/js/' //静态资源所在路径
         }).extend({
             index: 'lib/index' //主入口模块
         }).use(['index', 'form', 'table'], function () {
@@ -57,7 +57,7 @@
 
             table.render({
                 elem: "#LAY-app-content-list",
-                url: '/Page/UserManage/UserManageHandler.ashx?operation=GetList&r=' + Math.random(),
+                url: 'UserManageHandler.ashx?operation=GetList&r=' + Math.random(),
                 cols: [
                     [
                         { type: "checkbox", fixed: "left" },
@@ -95,7 +95,7 @@
                             }
                         }, function (e) {
                             $.ajax({
-                                url: '/Page/UserManage/UserManageHandler.ashx?operation=Delete',
+                                url: 'UserManageHandler.ashx?operation=Delete',
                                 dataType: 'json',
                                 type: 'Post',
                                 data: { id: row.Id, name: row.UserName, realName: row.RealName },
@@ -114,7 +114,7 @@
                         layer.open({
                             type: 2,
                             title: "编辑用户",
-                            content: "/Page/UserManage/Add.aspx?id=" + row.Id,
+                            content: "Add.aspx?id=" + row.Id,
                             maxmin: true,
                             area: ["700px", "550px"],
                             btn: ["确定", "取消"],
@@ -144,7 +144,7 @@
                             }
                         }, function (e) {
                             $.ajax({
-                                url: '/Page/UserManage/UserManageHandler.ashx?operation=ResetPwd',
+                                url: 'UserManageHandler.ashx?operation=ResetPwd',
                                 dataType: 'json',
                                 type: 'Post',
                                 data: { id: row.Id },
@@ -209,7 +209,7 @@
                         }
                     }, function (index) {
                         $.ajax({
-                            url: "/Page/UserManage/UserManageHandler.ashx?operation=BatchDelete",
+                            url: "UserManageHandler.ashx?operation=BatchDelete",
                             dataType: 'json',
                             type: 'Post',
                             data: { ids: ids, names: names },
@@ -229,7 +229,7 @@
                     layer.open({
                         type: 2
                       , title: '新增用户'
-                      , content: '/Page/UserManage/Add.aspx'
+                      , content: 'Add.aspx'
                       , maxmin: true
                       , area: ['700px', '550px']
                       , btn: ['确定', '取消']
