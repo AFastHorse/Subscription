@@ -1,0 +1,217 @@
+﻿@using BootstrapDemo.Common
+@model Models.Orders
+@{
+    ViewBag.Title = "认购成功";
+}
+@section styles{
+    <link href="~/Content/success.css" rel="stylesheet" />
+    <link href="~/Content/html2canvas.css?v=33" rel="stylesheet" />
+    <style>
+        h4 {
+            padding-left: 30px;
+            padding-right: 30px;
+            line-height: 27px;
+        }
+
+        .body-content {
+            width: 100%;
+            float: left;
+            padding: 0;
+            background: #d93730;
+            color: #fff;
+        }
+
+        .rzcg {
+            position: relative;
+            width: 100%;
+            float: left;
+        }
+
+            .rzcg .bg_img {
+                width: 100%;
+                float: left;
+            }
+
+        .content {
+            position: absolute;
+            top: 7rem;
+            left: 0;
+            width: 100%;
+            float: left;
+        }
+
+        .content_kh {
+            color: #fff;
+        }
+
+        .content_nr .end {
+            color: #fff;
+            margin: 0 10% 19rem;
+            width: 80%;
+            float: left;
+        }
+
+        .content_nr {
+            width: 100%;
+            float: left;
+            margin: 0;
+        }
+
+        .content_thanks {
+            width: 100%;
+            float: left;
+            margin: 0;
+        }
+
+            .content_thanks .end {
+                color: #a90025;
+                margin-left: 10%;
+                width: 80%;
+                float: left;
+                background-color: #fff;
+                padding: 1rem;
+                opacity: 0.7;
+                font-size: 1.7rem;
+            }
+
+        .xcy {
+            width: 100%;
+            float: left;
+            margin-bottom: 2.2rem;
+        }
+
+            .xcy p {
+                width: 100%;
+                float: left;
+                font-size: 2rem;
+                color: #fff5c2;
+                text-align: center;
+                padding: 0 10%;
+            }
+
+        .content_nr .end li .type {
+            width: 20%;
+        }
+
+        .content_nr .end li .number {
+            width: 18%;
+        }
+
+        .content_nr .end li .price {
+            width: 62%;
+        }
+
+        .row {
+            margin: 0;
+        }
+
+        .shareImg {
+            top: -7rem;
+        }
+
+        @@media only screen and (max-width:360px) {
+            .content_nr .end {
+                margin: 0 10% 12rem;
+            }
+        }
+
+        @@media only screen and (max-width:320px) {
+            .anniu {
+                padding-left: 46px;
+            }
+
+            .content_nr .end {
+                margin: 0 10% 8rem;
+            }
+
+                .content_nr .end li .api {
+                    width: 100%;
+                    float: left;
+                    color: #fe5552;
+                    text-align: center;
+                    font-size: 2.96rem;
+                    font-weight: bold;
+                    padding: 0.3rem 0 0.2rem;
+                }
+        }
+
+        @@media only screen and (min-width:375px)and (max-width:400px) {
+            .anniu {
+                padding-left: 66px;
+            }
+
+            .content_nr .end {
+                margin: 0 10% 6rem;
+            }
+        }
+    </style>
+}
+<div class="rzcg">
+    <img src="/images/bg4.png" class="bg_img" />
+    <div class="content">
+        <div class="row">
+            <div class="col-md-12 content_kh">
+                <h3>尊敬的<span>@(Model.UserName + ViewBag.Sex)</span><br /><span class="cgrz"> 您是第<span>@(ViewBag.Orders_Count)</span>位成功认购平安财富产品的客户。您认购的产品详情为：</span></h3>
+            </div>
+        </div>
+        <div class="row content_nr">
+            <div class="col-md-12 end">
+                <ul>
+                    @foreach (var item in ViewBag.OrderDetailList as List<Models.OrderDetail>)
+                    {
+                        <li>
+                            <p>
+                                <span>
+                                    @(EnumExtension.GetDesctiption(typeof(EnumPaymentAge), item.SPPaymentAge))交&nbsp;
+                                    @(EnumExtension.GetDesctiption(typeof(EnumSavingProducts), item.SavingProduct))产品&nbsp;
+                                    年交保费@(Convert.ToInt32(item.SPMoney))元
+                                </span>
+                            </p>
+                        </li>
+                    }
+                </ul>
+            </div>
+        </div>
+        <div class="row content_thanks">
+            <div class="col-md-12 end">
+                非常感谢您的认购操作，得到您的选择和信任是我们的最大的荣幸，我们必将不负所托，为您的财富传承保驾护航。本次认购不作为最终购买成功的凭据，因为产品配额十分有限，公司将以秒杀的方式发放购买额度，请您提前准备好保费，保证秒杀当天手机信号畅通，在我们客户经理的协助下帮您秒杀到心仪的额度。再次感谢，助您生活愉快！
+            </div>
+        </div>
+        <div class="shareImg" ref="shareImg" id="shareImg"></div>
+    </div>
+</div>
+<div class="row" style="text-align: center;position: relative;bottom: 2rem;">
+    <div class="col-md-12">
+        <button style="background:#fe5552;box-shadow: 0 5px 10px #4b0f0e;color:#fff;" id="saveImg" v-on:click="createImage" class="btn btn-default" type="button" data-html2canvas-ignore>保存图片</button>
+    </div>
+</div>
+@section scripts{
+    <script src="~/Scripts/nativeShare.js"></script>
+    <script src="~/Scripts/html2canvas.js?v=20101212"></script>
+    <script src="~/Scripts/vue-2.4.2.min.js?v=20101212"></script>
+    <script src="~/Scripts/index.js?v=20101212"></script>
+    <script src="~/Scripts/share.js"></script>
+    <script>
+        $(function () {
+            var X = $('.content_thanks').offset().top + 240;
+            var winHeight = $(window).height();
+            if (X>winHeight){
+                $('.bg_img').height(X + 240);
+            }
+            if (winHeight - X < 30) {
+                $('.bg_img').height(winHeight + 240);
+            }
+        });
+    </script>
+    @*<script>
+            var encouragement = ["要想改变命运，首先改变自己。", "没有退路的时候，正是潜力发挥最大的时候。", "智者创造机会，强者把握机会，弱者坐等机会。",
+                "最可怕的敌人，就是没有坚强的信念。", "每一个成功者都有一个开始。勇于开始，才能找到成功的路。", "活着的目的不在于永远活着，而在于永远活出自己。",
+                "梦想一旦被付诸行动，就会变得神圣。", "一个人，要是不逼自己一把，根本不知道自己有多优秀。", "逆境磨练人、逆境是老师、逆境之苦可变甜。",
+                "如果心胸不似海，又怎能有海一样的事业。"
+            ];
+            $(function () {
+                var index = Math.round(Math.random() * 10);
+                $('#encouragement').html(encouragement[index]);
+            });
+        </script>*@
+}

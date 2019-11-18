@@ -38,8 +38,8 @@ namespace DAL
         {
             using (var conn = OpenConnection())
             {
-                string sql = @"insert into Orders(Destination,CreateTime,OrderNo,UserName,Sex,UserCode,TotalMoney,API,FMX_Money,FMX_Count) 
-                            values (@Destination,@CreateTime,@OrderNo,@UserName,@Sex,@UserCode,@TotalMoney,@API,@FMX_Money,@FMX_Count)";
+                string sql = @"insert into Orders(Destination,CreateTime,OrderNo,UserName,Sex,UserCode,TotalMoney,API,FMX_Money,FMX_Count,UserPhone,OrderType) 
+                            values (@Destination,@CreateTime,@OrderNo,@UserName,@Sex,@UserCode,@TotalMoney,@API,@FMX_Money,@FMX_Count,@UserPhone,@OrderType)";
                 return conn.Execute(sql, model) > 0;
             }
         }
@@ -47,7 +47,7 @@ namespace DAL
         {
             using (var conn = OpenConnection())
             {
-                string sql = "update Orders set Destination=@Destination,UserName=@UserName,Sex=@Sex,TotalMoney=@TotalMoney,API=@API,FMX_Money=@FMX_Money,FMX_Count=@FMX_Count where Id=@Id ";
+                string sql = "update Orders set Destination=@Destination,UserName=@UserName,Sex=@Sex,TotalMoney=@TotalMoney,API=@API,FMX_Money=@FMX_Money,FMX_Count=@FMX_Count,UserPhone=@UserPhone,OrderType=@OrderType where Id=@Id ";
                 return conn.Execute(sql, model) > 0;
             }
         }

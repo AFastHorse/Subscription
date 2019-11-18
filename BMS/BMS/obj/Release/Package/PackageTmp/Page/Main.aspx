@@ -93,7 +93,7 @@
             <!-- 侧边菜单 -->
             <div class="layui-side layui-side-menu">
                 <div class="layui-side-scroll">
-                    <div class="layui-logo" lay-href="../Page/SubscriptionManage/Index.aspx">
+                    <div class="layui-logo" lay-href="SubscriptionManage/Index.aspx">
                         <span>认购平台管理</span>
                     </div>
 
@@ -120,7 +120,7 @@
                 </div>
                 <div class="layui-tab" lay-unauto lay-allowclose="true" lay-filter="layadmin-layout-tabs">
                     <ul class="layui-tab-title" id="LAY_app_tabsheader">
-                        <li id="liindexPage" lay-id="../Page/SubscriptionManage/Index.aspx" lay-attr="../Page/SubscriptionManage/Index.aspx" class="layui-this">认购管理</li>
+                        <li id="liindexPage" lay-id="SubscriptionManage/Index.aspx" lay-attr="SubscriptionManage/Index.aspx" class="layui-this">认购管理</li>
                     </ul>
                 </div>
             </div>
@@ -129,7 +129,7 @@
             <!-- 主体内容 -->
             <div class="layui-body" id="LAY_app_body" style="top: 40px;">
                 <div class="layadmin-tabsbody-item layui-show">
-                    <iframe id="ifmMain" src="../Page/SubscriptionManage/Index.aspx" frameborder="0" class="layadmin-iframe"></iframe>
+                    <iframe id="ifmMain" src="SubscriptionManage/Index.aspx" frameborder="0" class="layadmin-iframe"></iframe>
                 </div>
             </div>
 

@@ -184,6 +184,8 @@
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Global.asax" />
     <Content Include="LoginHandler.ashx" />
+    <Content Include="Page\CustomerSubscription\Index.aspx" />
+    <Content Include="Page\CustomerSubscription\OrderDetail.aspx" />
     <Content Include="Page\DeptManage\Add.aspx" />
     <Content Include="Page\DeptManage\Index.aspx" />
     <Content Include="Page\MenuManage\Add.aspx" />
@@ -195,6 +197,7 @@
     <Content Include="Page\UserManage\UserManageHandler.ashx" />
     <Content Include="Page\SubscriptionManage\SubscriptionManage.ashx" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="Page\CustomerSubscription\CustomerSubscription.ashx" />
     <None Include="Properties\PublishProfiles\BMS.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Login.aspx" />
@@ -373,6 +376,23 @@
     </Compile>
     <Compile Include="LoginHandler.ashx.cs">
       <DependentUpon>LoginHandler.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\CustomerSubscription\CustomerSubscription.ashx.cs">
+      <DependentUpon>CustomerSubscription.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\CustomerSubscription\Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\CustomerSubscription\Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Page\CustomerSubscription\OrderDetail.aspx.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Page\CustomerSubscription\OrderDetail.aspx.designer.cs">
+      <DependentUpon>OrderDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Page\DeptManage\Add.aspx.cs">
       <DependentUpon>Add.aspx</DependentUpon>

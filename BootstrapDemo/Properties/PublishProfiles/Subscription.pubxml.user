@@ -22,22 +22,22 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/05/2019 18:19:57</publishTime>
     </File>
     <File Include="bin/BLL.dll">
-      <publishTime>11/14/2019 21:39:57</publishTime>
+      <publishTime>11/18/2019 17:21:36</publishTime>
     </File>
     <File Include="bin/BLL.pdb">
-      <publishTime>11/14/2019 21:39:57</publishTime>
+      <publishTime>11/18/2019 17:21:36</publishTime>
     </File>
     <File Include="bin/BootstrapDemo.dll">
-      <publishTime>11/15/2019 17:01:07</publishTime>
+      <publishTime>11/18/2019 17:21:40</publishTime>
     </File>
     <File Include="bin/BootstrapDemo.pdb">
-      <publishTime>11/15/2019 17:01:07</publishTime>
+      <publishTime>11/18/2019 17:21:40</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>11/14/2019 21:39:56</publishTime>
+      <publishTime>11/18/2019 17:21:36</publishTime>
     </File>
     <File Include="bin/DAL.pdb">
-      <publishTime>11/14/2019 21:39:56</publishTime>
+      <publishTime>11/18/2019 17:21:36</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>03/18/2019 10:12:14</publishTime>
@@ -112,10 +112,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/05/2019 18:19:58</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>11/14/2019 21:39:55</publishTime>
+      <publishTime>11/18/2019 17:21:35</publishTime>
     </File>
     <File Include="bin/Model.pdb">
-      <publishTime>11/14/2019 21:39:55</publishTime>
+      <publishTime>11/18/2019 17:21:35</publishTime>
     </File>
     <File Include="bin/Newtonsoft.Json.dll">
       <publishTime>11/05/2019 18:19:58</publishTime>
@@ -346,10 +346,16 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/05/2019 18:19:57</publishTime>
     </File>
     <File Include="Views/Home/Customer.cshtml">
-      <publishTime>11/14/2019 16:34:31</publishTime>
+      <publishTime>11/18/2019 10:40:19</publishTime>
+    </File>
+    <File Include="Views/Home/CustomerSubmitSuccess.cshtml">
+      <publishTime>11/18/2019 10:40:17</publishTime>
+    </File>
+    <File Include="Views/Home/CustomerTarget.cshtml">
+      <publishTime>11/18/2019 10:40:17</publishTime>
     </File>
     <File Include="Views/Home/Index.cshtml">
-      <publishTime>11/12/2019 10:17:09</publishTime>
+      <publishTime>11/18/2019 10:40:18</publishTime>
     </File>
     <File Include="Views/Home/PartialForm.cshtml">
       <publishTime>11/14/2019 18:01:59</publishTime>
@@ -358,10 +364,10 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>11/14/2019 16:33:56</publishTime>
     </File>
     <File Include="Views/Home/SubmitSuccess.cshtml">
-      <publishTime>11/15/2019 16:01:05</publishTime>
+      <publishTime>11/15/2019 17:47:42</publishTime>
     </File>
     <File Include="Views/Home/SubscriptionSuccess.cshtml">
-      <publishTime>11/15/2019 16:00:45</publishTime>
+      <publishTime>11/15/2019 17:47:24</publishTime>
     </File>
     <File Include="Views/Home/SubscriptionTarget.cshtml">
       <publishTime>11/15/2019 15:58:31</publishTime>

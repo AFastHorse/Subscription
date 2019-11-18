@@ -40,7 +40,7 @@ namespace BMS.Page.SubscriptionManage
 
         private void ExportData(HttpContext context)
         {
-            string strWhere = "";
+            string strWhere = " and OrderType=0 ";
             string userName = context.Request["UserName"];
             if (!string.IsNullOrEmpty(userName))
             {
@@ -55,11 +55,11 @@ namespace BMS.Page.SubscriptionManage
             string[] colTitles = { "序号" ,"旅游方案", "认购时间", "姓名", "性别", "代码", "总金额", "API", "福满星保费","福满星件数","产品类型", "产品名称",
                                     "保费", "交费年限"};
             //移除不需要导出的列
-            string[] removeCols = { };
+            string[] removeCols = { "UserPhone" };
 
             NPOIHelper.InitTable(table, colTitles, removeCols);
 
-            NPOIHelper.ExportByWeb_Other(table, "认购信息", DateTime.Now.ToString("yyyyMMddHHmmss") + "_认购信息.xls");
+            NPOIHelper.ExportByWeb_Other(table, "业务员认购信息", DateTime.Now.ToString("yyyyMMddHHmmss") + "_业务员认购信息.xls", 9);
         }
 
         private string GetList(HttpContext context)
@@ -68,7 +68,7 @@ namespace BMS.Page.SubscriptionManage
             int pageSize = ObjectConvertHelper.ConvertToInt(context.Request["limit"]);
             string name = ObjectConvertHelper.ConvertToString(context.Request["txtName"]);
 
-            string strWhere = "";
+            string strWhere = " and OrderType=0 ";
 
             if (!string.IsNullOrEmpty(name))
             {

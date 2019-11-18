@@ -14,7 +14,7 @@
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         <div class="form-group">
-            @Html.LabelFor(model => model.UserName, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2" for="UserName">投保人姓名</label>
             <div class="col-md-10">
                 @Html.EditorFor(model => model.UserName, new { htmlAttributes = new { @class = "form-control", maxlength = 10 } })
                 @Html.ValidationMessageFor(model => model.UserName, "", new { @class = "text-danger" })
@@ -22,9 +22,15 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.Sex, htmlAttributes: new { @class = "control-label col-md-2" })
+            <label class="control-label col-md-2" for="Sex">投保人性别</label>
             <div class="col-md-10">
                 @Html.DropDownListFor(m => m.Sex, ViewData["sex"] as List<SelectListItem>, new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2" for="UserPhone">投保人电话</label>
+            <div class="col-md-10">
+                <input class="form-control text-box single-line" data-val="true" data-val-maxlength="长度最大为10" data-val-maxlength-max="4" id="UserPhone" maxlength="4" name="UserPhone" type="text" value="">
             </div>
         </div>
 
@@ -33,11 +39,6 @@
             <div class="col-md-10">
                 @Html.EditorFor(model => model.UserCode, new { htmlAttributes = new { @class = "form-control", maxlength = 10 } })
                 @Html.ValidationMessageFor(model => model.UserCode, "", new { @class = "text-danger" })
-            </div>
-        </div>
-        <div class="form-group">
-            <div class="col-md-12">
-                注：本页面可重复填写，最终结果以最后一次填写为准。
             </div>
         </div>
         <div class="form-group">
@@ -55,16 +56,23 @@
     <script>
         $('#nextPage').click(function () {
             var userName = $('#UserName').val();
-            var userCode = $('#UserCode').val();
+            var userPhone = $('#UserPhone').val();
+            var userCode = $('#UserCode').val();//业务员代码
+
             if (userName == '') {
                 alert("请填写姓名");
+                return false;
+            }
+            if (userPhone == '') {
+                alert("请填写电话");
                 return false;
             }
             if (userCode == '') {
                 alert("请填写编号");
                 return false;
             }
-            window.location = '/Home/SubscriptionTarget?UserName=' + userName + "&Sex=" + $('#Sex').val() + "&UserCode=" + userCode;
+            window.location = '/Home/CustomerTarget?UserName=' + userName + "&Sex=" + $('#Sex').val()
+                + "&UserPhone=" + userPhone + "&UserCode=" + userCode;
         });
     </script>
 }

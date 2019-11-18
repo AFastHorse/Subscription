@@ -1,0 +1,152 @@
+﻿@using BootstrapDemo.Models
+@model Models.Orders
+
+@{
+    ViewBag.Title = "财富秒杀认购";
+}
+
+<h2>财富秒杀认购</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        @Html.Hidden("UserName", (string)ViewBag.UserName)
+        @Html.Hidden("Sex", (string)ViewBag.Sex)
+        @Html.Hidden("UserPhone", (string)ViewBag.UserPhone)
+        @Html.Hidden("UserCode", (string)ViewBag.UserCode)
+        @Html.Hidden("TotalMoney", 0)
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="subscriptTarget" id="form1">
+            @Html.Action("PartialForm", "Home", new { index = 1 })
+        </div>
+        <hr />
+        <div class="form-group" id="addMore">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="btnAddMore" value="增加开门红目标" class="btn btn-default" />
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="button" id="nextPage" value="保存" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+<div class="row">
+    <div class="col-md-offset-2 col-md-10">
+        @Html.ActionLink("返回首页", "Index")
+    </div>
+</div>
+@section scripts{
+    <script>
+        var index = 2;
+        $(function () {
+            $('#btnAddMore').click(function () {
+                $('#addMore').before('<div class="subscriptTarget" id="form' + index + '"></div><hr />');
+                $('#form' + index).load('/Home/Partialform/?index=' + index, function () {
+                    $('.money').unbind();
+                    $('.sel_pay_age').unbind();
+                    $('.sel_saving').unbind();
+                    $('.money').keyup(payTotalMoney);
+                    $('.sel_pay_age').change(payTotalMoney);
+                    $('.sel_saving').change(changeAgeShowState);
+                    $('.sel_saving').each(function (i, val) {
+                        var dataIndex = $(this).attr("data-index");
+                        if ($(this).val() == 1) {
+                            $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
+                            $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
+                        } else {
+                            if ($('#SavingProducts_PaymentAge_' + dataIndex).find('option').length < 3) {
+                                var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                                obj.options.add(new Option("10年", "10"));
+                                //$("#SavingProducts_PaymentAge_" + dataIndex).append("<option value=\"10\">10年</option>");
+                            }
+                        }
+                    });
+                });
+                index++;
+            });
+            $('#nextPage').click(function () {
+                var userName = $('#UserName').val();
+                var sex = $('#Sex').val();
+                var userPhone = $('#UserPhone').val();
+                var userCode = $('#UserCode').val();
+                var totalMoney = parseInt($('#TotalMoney').val() == "" ? "0" : $('#TotalMoney').val());
+
+                var list = [];
+                $('.subscriptTarget').each(function (i, val) {
+                    var spMoney = $('#SavingProducts_Money_' + (i + 1)).val() == '' ? "0" : $('#SavingProducts_Money_' + (i + 1)).val()
+                    var obj = {
+                        SavingProduct: $('#SavingProducts_' + (i + 1)).val(),
+                        SPMoney: spMoney,
+                        SPPaymentAge: $('#SavingProducts_PaymentAge_' + (i + 1)).val(),
+                        ProductType: 1
+                    };
+                    if (parseInt(spMoney)) {
+                        list.push(obj);
+                    }
+                });
+                if (list.length == 0) {
+                    alert("您还没有认购产品");
+                    return false;
+                }
+                $.ajax({
+                    url: '/Home/CustomerTarget/',
+                    type: 'post',
+                    dataType: 'json',
+                    data: {
+                        UserName: userName,
+                        Sex: sex,
+                        UserPhone: userPhone,
+                        UserCode: userCode,
+                        TotalMoney: totalMoney,
+                        list: JSON.stringify(list)
+                    },
+                    success: function (data) {
+                        if (data.success == 0) {
+                            window.location = '/Home/CustomerSubmitSuccess?orderNo=' + data.orderNo + "&sex=" + sex;
+                        }
+                    }
+                });
+            });
+            $('.money').keyup(payTotalMoney);
+            $('.sel_pay_age').change(payTotalMoney);
+            $('.sel_saving').change(changeAgeShowState);
+            $('.sel_saving').each(function (i, val) {
+                var dataIndex = $(this).attr("data-index");
+                if ($(this).val() == 1) {
+                    $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
+                    $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
+                } else {
+                    var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                    obj.options.add(new Option("10年", "10"));
+                }
+            });
+        });
+        function changeAgeShowState() {
+            var dataIndex = $(this).attr("data-index");
+            if ($(this).val() == 1) {
+                $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
+                $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
+            } else {
+                var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                obj.options.add(new Option("10年", "10"));
+            }
+        }
+        function payTotalMoney() {
+            var money = 0;
+            $('.subscriptTarget').each(function (i, val) {
+                var sp_age = $('#SavingProducts_PaymentAge_' + (i + 1)).val();
+                sp_age = sp_age == "" ? "0" : sp_age;
+                var sp_money = $('#SavingProducts_Money_' + (i + 1)).val();
+                if (sp_money != '') {
+                    money += parseInt(sp_money);
+                }
+            });
+            $('#TotalMoney').val(money);
+        }
+    </script>
+}

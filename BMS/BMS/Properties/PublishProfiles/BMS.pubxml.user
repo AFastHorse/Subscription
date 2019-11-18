@@ -19,22 +19,22 @@
       <publishTime>11/17/2018 10:14:56</publishTime>
     </File>
     <File Include="bin/BLL.dll">
-      <publishTime>11/14/2019 21:39:57</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/BLL.pdb">
-      <publishTime>11/14/2019 21:39:57</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/BMS.dll">
-      <publishTime>11/15/2019 21:51:34</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/BMS.pdb">
-      <publishTime>11/15/2019 21:51:34</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/DAL.dll">
-      <publishTime>11/14/2019 21:39:56</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/DAL.pdb">
-      <publishTime>11/14/2019 21:39:56</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/Dapper.dll">
       <publishTime>03/18/2019 10:12:14</publishTime>
@@ -79,10 +79,10 @@
       <publishTime>02/28/2019 08:34:23</publishTime>
     </File>
     <File Include="bin/Model.dll">
-      <publishTime>11/14/2019 21:39:55</publishTime>
+      <publishTime>11/18/2019 18:15:24</publishTime>
     </File>
     <File Include="bin/Model.pdb">
-      <publishTime>11/14/2019 21:39:55</publishTime>
+      <publishTime>11/18/2019 18:15:24</publishTime>
     </File>
     <File Include="bin/netstandard.dll">
       <publishTime>02/28/2019 08:34:23</publishTime>
@@ -547,10 +547,10 @@
       <publishTime>02/28/2019 08:34:23</publishTime>
     </File>
     <File Include="bin/Utility.dll">
-      <publishTime>11/14/2019 21:39:56</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="bin/Utility.pdb">
-      <publishTime>11/14/2019 21:39:56</publishTime>
+      <publishTime>11/18/2019 18:15:25</publishTime>
     </File>
     <File Include="Config/log4net.config">
       <publishTime>03/18/2019 11:58:28</publishTime>
@@ -693,6 +693,15 @@
     <File Include="packages.config">
       <publishTime>11/15/2019 20:17:55</publishTime>
     </File>
+    <File Include="Page/CustomerSubscription/CustomerSubscription.ashx">
+      <publishTime>11/18/2019 10:46:19</publishTime>
+    </File>
+    <File Include="Page/CustomerSubscription/Index.aspx">
+      <publishTime>11/18/2019 10:46:19</publishTime>
+    </File>
+    <File Include="Page/CustomerSubscription/OrderDetail.aspx">
+      <publishTime>11/18/2019 10:46:19</publishTime>
+    </File>
     <File Include="Page/DeptManage/Add.aspx">
       <publishTime>11/15/2019 21:28:35</publishTime>
     </File>
@@ -721,7 +730,7 @@
       <publishTime>03/25/2019 09:54:34</publishTime>
     </File>
     <File Include="Page/Main.aspx">
-      <publishTime>11/15/2019 21:32:56</publishTime>
+      <publishTime>11/18/2019 10:52:45</publishTime>
     </File>
     <File Include="Page/MenuManage/Add.aspx">
       <publishTime>11/10/2019 23:58:55</publishTime>
@@ -763,7 +772,7 @@
       <publishTime>03/21/2019 16:34:06</publishTime>
     </File>
     <File Include="Page/SubscriptionManage/Index.aspx">
-      <publishTime>11/15/2019 21:18:37</publishTime>
+      <publishTime>11/18/2019 10:46:55</publishTime>
     </File>
     <File Include="Page/SubscriptionManage/OrderDetail.aspx">
       <publishTime>11/15/2019 21:19:27</publishTime>

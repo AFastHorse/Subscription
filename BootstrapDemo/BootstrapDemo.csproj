@@ -298,6 +298,8 @@
     <Content Include="Views\Home\SubscriptionSuccess.cshtml" />
     <Content Include="Views\Home\SubmitSuccess.cshtml" />
     <Content Include="Views\Home\Customer.cshtml" />
+    <Content Include="Views\Home\CustomerSubmitSuccess.cshtml" />
+    <Content Include="Views\Home\CustomerTarget.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

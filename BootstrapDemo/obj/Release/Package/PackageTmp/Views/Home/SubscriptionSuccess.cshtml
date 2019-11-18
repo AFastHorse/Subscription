@@ -144,7 +144,7 @@
             <div class="col-md-12 end ">
                 <ul>
                     <li><p>产品目标：</p></li>
-                    <li @((int)ViewBag.Saving_Count > 0 ? "" : "style=\"display:none;\"")><p><span class="type">储蓄类产品</span><span class="number">@ViewBag.Saving_Count 件</span><span class="price">保费 @(Convert.ToInt32(ViewBag.Saving_Money))元</span></p></li>
+                    <li><p><span class="type">储蓄类产品</span><span class="number">@ViewBag.Saving_Count 件</span><span class="price">保费 @(Convert.ToInt32(ViewBag.Saving_Money))元</span></p></li>
                     <li><p><span class="type">福满星产品</span><span class="number">@Model.FMX_Count 件</span><span class="price">保费 @(Model.FMX_Money)元</span></p></li>
                     <li><p class="api">累计API：@(Convert.ToInt32(ViewBag.API) + Convert.ToInt32(Model.FMX_Money))</p></li>
                 </ul>

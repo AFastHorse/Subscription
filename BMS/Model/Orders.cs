@@ -12,7 +12,7 @@ namespace Models
     {
         public int Id { get; set; }
         [DisplayName("旅游地点")]
-        public string Destination { get; set; }
+        public string Destination { get; set; } = string.Empty;
         public DateTime CreateTime { get; set; }
         public string OrderNo { get; set; }
         [DisplayName("业务员姓名")]
@@ -23,9 +23,12 @@ namespace Models
         [MaxLength(10, ErrorMessage = "长度最大为10")]
         public string UserCode { get; set; }
         public decimal TotalMoney { get; set; }
-        public decimal API { get; set; }
-        public decimal FMX_Money { get; set; }
-        public decimal FMX_Count { get; set; }
+        public decimal API { get; set; } = 0M;
+        public decimal FMX_Money { get; set; } = 0M;
+        public decimal FMX_Count { get; set; } = 0M;
+        [DisplayName("投保人电话")]
+        public string UserPhone { get; set; } = string.Empty;
+        public int OrderType { get; set; } = 0;
     }
     public class ViewOrders
     {
@@ -40,6 +43,7 @@ namespace Models
         public decimal API { get; set; }
         public decimal FMX_Money { get; set; }
         public decimal FMX_Count { get; set; }
+        public string UserPhone { get; set; } = string.Empty;
     }
 
     public class Orders_Detail
@@ -54,6 +58,7 @@ namespace Models
         public decimal API { get; set; }
         public decimal FMX_Money { get; set; }
         public decimal FMX_Count { get; set; }
+        public string UserPhone { get; set; } = string.Empty;
 
         public string ProductType { get; set; }
         public string SavingProduct { get; set; }

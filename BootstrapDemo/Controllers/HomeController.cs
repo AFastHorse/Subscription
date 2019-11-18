@@ -33,6 +33,50 @@ namespace BootstrapDemo.Controllers
             ViewData["sex"] = list;
             return View();
         }
+        public ActionResult CustomerTarget()
+        {
+            ViewBag.UserName = Request.QueryString["UserName"];
+            ViewBag.Sex = Request.QueryString["Sex"];
+            ViewBag.UserPhone = Request.QueryString["UserPhone"];
+            ViewBag.UserCode = Request.QueryString["UserCode"];
+            return View();
+        }
+        [HttpPost]
+        public JsonResult CustomerTarget(Orders model, FormCollection forms)
+        {
+            List<OrderDetail> list = JsonConvert.DeserializeObject<List<OrderDetail>>(forms["list"]);
+            OrdersBLL bll = new OrdersBLL();
+            OrderDetailBLL detailBll = new OrderDetailBLL();
+
+            model.OrderNo = System.Guid.NewGuid().ToString();
+            model.CreateTime = DateTime.Now;
+            model.OrderType = 1;
+            foreach (OrderDetail item in list)
+            {
+                item.OrderNo = model.OrderNo;
+                item.CreateTime = model.CreateTime;
+            }
+            if (bll.Add(model))
+            {
+                if (list.Count > 0)
+                {
+                    detailBll.Add(list);
+                }
+                return Json(new { success = 0, msg = "保存成功", orderNo = model.OrderNo });
+            }
+            return Json(new { success = 1, msg = "保存失败" });
+        }
+        public ActionResult CustomerSubmitSuccess()
+        {
+            ViewBag.Sex = Request.QueryString["sex"].ToString() == "1" ? "先生" : "女士";
+            string orderNo = Request.QueryString["orderNo"];
+            var order = new OrdersBLL().GetModel(orderNo);
+            var orders_count = new OrdersBLL().GetCount(" and OrderType=1 ");
+            ViewBag.Orders_Count = 2000 + orders_count;
+            var orderList = new OrderDetailBLL().GetList(" and OrderNo='" + orderNo + "'");
+            ViewBag.OrderDetailList = orderList;
+            return View(order);
+        }
         public ActionResult SubscriptionTarget()
         {
             ViewBag.UserName = Request.QueryString["UserName"];
@@ -53,7 +97,7 @@ namespace BootstrapDemo.Controllers
             OrdersBLL bll = new OrdersBLL();
             OrderDetailBLL detailBll = new OrderDetailBLL();
 
-            var order = new OrdersBLL().GetModelByCondition(" and UserCode='" + model.UserCode + "'");
+            var order = new OrdersBLL().GetModelByCondition(" and UserCode='" + model.UserCode + "' and OrderType=0 ");
             if (order != null)
             {
                 model.Id = order.Id;

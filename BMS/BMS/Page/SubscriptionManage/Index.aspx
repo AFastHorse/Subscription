@@ -78,7 +78,7 @@
                 var data = obj.data;
                 layer.open({
                     type: 2
-                    , title: '辅助核算期初管理'
+                    , title: '目标详情'
                     , content: 'OrderDetail.aspx?OrderNo=' + data.OrderNo
                     , maxmin: true
                     , area: ['1060px', '600px']

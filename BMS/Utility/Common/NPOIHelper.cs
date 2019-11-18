@@ -171,7 +171,7 @@ namespace Utility.Common
                 return ms;
             }
         }
-        public static MemoryStream Export_Other(DataTable dtSource, string strHeaderText)
+        public static MemoryStream Export_Other(DataTable dtSource, string strHeaderText, int limit)
         {
             HSSFWorkbook workbook = new HSSFWorkbook();
             HSSFSheet sheet = (HSSFSheet)workbook.CreateSheet(strHeaderText);
@@ -247,7 +247,7 @@ namespace Utility.Common
                 dtSource.Rows[i]["序号"] = num++;
                 for (int j = 0; j < dtSource.Columns.Count; j++)
                 {
-                    if (j < 10)
+                    if (j < limit)
                     {
                         SetCellValue(rows[0], dtSource.Columns[j], dataRow, workbook, sheet, dateStyle, true, rows.Length, rowIndex, j);
                     }
@@ -262,7 +262,7 @@ namespace Utility.Common
                     dataRow = (HSSFRow)sheet.CreateRow(rowIndex);
                     dataRow.HeightInPoints = 20;
                     DataRow row = dtSource.Rows[m];
-                    for (int n = 10; n < dtSource.Columns.Count; n++)
+                    for (int n = limit; n < dtSource.Columns.Count; n++)
                     {
                         SetCellValue(rows[m], dtSource.Columns[n], dataRow, workbook, sheet, dateStyle, false);
                     }
@@ -368,7 +368,7 @@ namespace Utility.Common
             curContext.Response.BinaryWrite(Export(dtSource, strHeaderText).GetBuffer());
             curContext.Response.End();
         }
-        public static void ExportByWeb_Other(DataTable dtSource, string strHeaderText, string strFileName)
+        public static void ExportByWeb_Other(DataTable dtSource, string strHeaderText, string strFileName, int limit)
         {
             HttpContext curContext = HttpContext.Current;
 
@@ -379,7 +379,7 @@ namespace Utility.Common
             curContext.Response.AppendHeader("Content-Disposition",
                 "attachment;filename=" + HttpUtility.UrlEncode(strFileName, Encoding.UTF8));
 
-            curContext.Response.BinaryWrite(Export_Other(dtSource, strHeaderText).GetBuffer());
+            curContext.Response.BinaryWrite(Export_Other(dtSource, strHeaderText, limit).GetBuffer());
             curContext.Response.End();
         }
 
