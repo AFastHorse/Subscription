@@ -144,6 +144,10 @@
                 margin: 0 10% 6rem;
             }
         }
+
+        #com-alert {
+            top: 128px;
+        }
     </style>
 }
 <div class="rzcg">
@@ -172,12 +176,28 @@
                 </ul>
             </div>
         </div>
-        <div class="row content_thanks">
-            <div class="col-md-12 end">
-                非常感谢您的认购操作，得到您的选择和信任是我们的最大的荣幸，我们必将不负所托，为您的财富传承保驾护航。本次认购不作为最终购买成功的凭据，因为产品配额十分有限，公司将以秒杀的方式发放购买额度，请您提前准备好保费，保证秒杀当天手机信号畅通，在我们客户经理的协助下帮您秒杀到心仪的额度。再次感谢，助您生活愉快！
+        @*<div class="row content_thanks">
+                <div class="col-md-12 end">
+                    非常感谢您的认购操作，得到您的选择和信任是我们的最大的荣幸，我们必将不负所托，为您的财富传承保驾护航。本次认购不作为最终购买成功的凭据，因为产品配额十分有限，公司将以秒杀的方式发放购买额度，请您提前准备好保费，保证秒杀当天手机信号畅通，在我们客户经理的协助下帮您秒杀到心仪的额度。再次感谢，助您生活愉快！
+                </div>
+            </div>*@
+        <div class="shareImg" ref="shareImg" id="shareImg"></div>
+    </div>
+</div>
+<div id="com-alert" class="modal" style="z-index:9999;display: none;">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" id="btnClose" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">关闭</span></button>
+                <h5 class="modal-title"><i class="fa fa-exclamation-circle"></i> 提示</h5>
+            </div>
+            <div class="modal-body small">
+                <p style="color: #000;">非常感谢您的认购操作，得到您的选择和信任是我们的最大的荣幸，我们必将不负所托，为您的财富传承保驾护航。本次认购不作为最终购买成功的凭据，因为产品配额十分有限，公司将以秒杀的方式发放购买额度，请您提前准备好保费，保证秒杀当天手机信号畅通，在我们客户经理的协助下帮您秒杀到心仪的额度。再次感谢，助您生活愉快！</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary ok" id="btnOK" data-dismiss="modal">确定</button>
             </div>
         </div>
-        <div class="shareImg" ref="shareImg" id="shareImg"></div>
     </div>
 </div>
 <div class="row" style="text-align: center;position: relative;bottom: 2rem;">
@@ -193,14 +213,18 @@
     <script src="~/Scripts/share.js"></script>
     <script>
         $(function () {
-            var X = $('.content_thanks').offset().top + 240;
-            var winHeight = $(window).height();
-            if (X>winHeight){
-                $('.bg_img').height(X + 240);
-            }
-            if (winHeight - X < 30) {
-                $('.bg_img').height(winHeight + 240);
-            }
+            //var X = $('.content_thanks').offset().top + 240;
+            //var winHeight = $(window).height();
+            //if (X > winHeight) {
+            //    $('.bg_img').height(X + 240);
+            //}
+            //if (winHeight - X < 30) {
+            //    $('.bg_img').height(winHeight + 240);
+            //}
+            $('#com-alert').show(200);
+            $('#btnClose,#btnOK').click(function () {
+                $('#com-alert').hide();
+            });
         });
     </script>
     @*<script>
