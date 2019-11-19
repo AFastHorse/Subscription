@@ -155,23 +155,23 @@
     <div class="content">
         <div class="row">
             <div class="col-md-12 content_kh">
-                <h3>尊敬的<span>@(Model.UserName + ViewBag.Sex)</span><br /><span class="cgrz"> 您是第<span>@(ViewBag.Orders_Count)</span>位成功认购平安财富产品的客户。您认购的产品详情为：</span></h3>
+                <h3>尊敬的<span>@(Model.UserName + ViewBag.Sex)</span><br /><span style="font-size: 2.1rem;text-align: center;padding-left: 3rem;padding-right: 3rem;display: inherit;margin-top: 2rem;"> 您是第<span style="font-size: 3rem;font-weight: bold;">@(ViewBag.Orders_Count)</span>位成功认购平安财富产品的客户。</span></h3>
             </div>
         </div>
         <div class="row content_nr">
             <div class="col-md-12 end">
                 <ul>
-                    @foreach (var item in ViewBag.OrderDetailList as List<Models.OrderDetail>)
-                    {
-                        <li>
-                            <p>
-                                <span>
-                                    @(EnumExtension.GetDesctiption(typeof(EnumPaymentAge), item.SPPaymentAge))交&nbsp;
-                                    @(EnumExtension.GetDesctiption(typeof(EnumSavingProducts), item.SavingProduct))产品&nbsp;
-                                    年交保费@(Convert.ToInt32(item.SPMoney))元
-                                </span>
-                            </p>
-                        </li>
+                    @{
+                        int num = 1;
+                        foreach (var item in ViewBag.OrderDetailList as List<Models.OrderDetail>)
+                        {
+                            <li>
+                                <p>
+                                    <span style="font-size: 2rem;">@(num++).</span>
+                                    <span>@(EnumExtension.GetDesctiption(typeof(EnumPaymentAge), item.SPPaymentAge))交&nbsp;@(EnumExtension.GetDesctiption(typeof(EnumSavingProducts), item.SavingProduct))产品&nbsp;年交保费@(Convert.ToInt32(item.SPMoney))元</span>
+                                </p>
+                            </li>
+                        }
                     }
                 </ul>
             </div>

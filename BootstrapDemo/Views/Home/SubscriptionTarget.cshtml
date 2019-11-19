@@ -96,9 +96,11 @@
                             $('#SavingProducts_PaymentAge_' + dataIndex).val(3);
                             $("#SavingProducts_PaymentAge_" + dataIndex + " option:eq(2)").remove();
                         } else {
-                            var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
-                            obj.options.add(new Option("10年", "10"));
-                            //$("#SavingProducts_PaymentAge_" + dataIndex).append("<option value=\"10\">10年</option>");
+                            if ($('#SavingProducts_PaymentAge_' + dataIndex).find('option').length < 3) {
+                                var obj = document.getElementById("SavingProducts_PaymentAge_" + dataIndex);
+                                obj.options.add(new Option("10年", "10"));
+                                //$("#SavingProducts_PaymentAge_" + dataIndex).append("<option value=\"10\">10年</option>");
+                            }
                         }
                     });
                 });
