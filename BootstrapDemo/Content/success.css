@@ -36,8 +36,7 @@
 
         .content_nr .end li p {
             color: #000;
-            width: 100%;
-            float: left;
+            width: 100%;            
             font-size: 1.5rem;
             line-height: 1.6rem;
         }
