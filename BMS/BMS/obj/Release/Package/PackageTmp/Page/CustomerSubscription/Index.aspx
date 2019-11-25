@@ -61,6 +61,7 @@
                         { type: 'numbers', title: '序号', width: 100 },
                         { field: "UserName", width: 100, title: "名称" },
                         { field: "Sex", width: 80, title: "性别" },
+                        { field: "UserCode", width: 120, title: "业务员代码" },
                         { field: "TotalMoney", title: "总金额", width: 200, align: 'center' },
                         { field: "CreateTime", title: "认购时间", width: 300, align: 'center' }
                     ]

@@ -52,13 +52,13 @@ namespace BMS.Page.CustomerSubscription
             DataTable table = NPOIHelper.ToDataTable(list);//将list转化为table，转为NPOI需要的数据源格式
 
             //列标题名称
-            string[] colTitles = { "序号", "认购时间", "姓名", "性别", "总金额", "电话", "产品名称", "保费", "交费年限" };
+            string[] colTitles = { "序号", "认购时间", "姓名", "性别", "业务员代码", "总金额", "电话", "产品名称", "保费", "交费年限" };
             //移除不需要导出的列
-            string[] removeCols = { "Destination", "UserCode", "API", "FMX_Money", "FMX_Count", "ProductType" };
+            string[] removeCols = { "Destination", "API", "FMX_Money", "FMX_Count", "ProductType" };
 
             NPOIHelper.InitTable(table, colTitles, removeCols);
 
-            NPOIHelper.ExportByWeb_Other(table, "客户认购信息", DateTime.Now.ToString("yyyyMMddHHmmss") + "_客户认购信息.xls", 6);
+            NPOIHelper.ExportByWeb_Other(table, "客户认购信息", DateTime.Now.ToString("yyyyMMddHHmmss") + "_客户认购信息.xls", 7);
         }
 
         private string GetList(HttpContext context)

@@ -120,7 +120,7 @@
                 </div>
                 <div class="layui-tab" lay-unauto lay-allowclose="true" lay-filter="layadmin-layout-tabs">
                     <ul class="layui-tab-title" id="LAY_app_tabsheader">
-                        <li id="liindexPage" lay-id="SubscriptionManage/Index.aspx" lay-attr="SubscriptionManage/Index.aspx" class="layui-this">认购管理</li>
+                        <li id="liindexPage" lay-id="SubscriptionManage/Index.aspx" lay-attr="SubscriptionManage/Index.aspx" class="layui-this">业务员认购</li>
                     </ul>
                 </div>
             </div>
